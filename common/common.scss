@@ -40,7 +40,9 @@
 .side-nav-container-body {
   > *:not(:last-child) {
     border-bottom: 1px solid #d2d5d9;
-    padding: 0.5em 1.5rem 0.25em;
+  }
+  > * {
+    padding: 1.5rem 0;
   }
 }
 
@@ -74,6 +76,7 @@
 .top-contributors-container-contributor {
   :not(:last-child):first-child {
     margin-left: 0.5rem;
+    padding: 0.5em 1.5rem 0.25em;
   }
   &:nth-child(1)::before {
     content: "#1 ";
