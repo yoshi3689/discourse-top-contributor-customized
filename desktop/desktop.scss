@@ -14,8 +14,7 @@
 // }
 .discourse-top-contributors {
   margin-top: 3rem;
-  padding: 1em;
-  padding-top: 0;
+  padding: 0 1em;
   width: max-content;
   .top-contributors-heading {
     font-size: 1.5em;
@@ -25,6 +24,9 @@
   }
 }
 .top-contributors-container  {
+  .top-contributors-container-link {
+    padding: 2rem 0;
+  }
   .top-contributors-container-contributor {
     border-bottom: 1px solid #d2d5d9;
     padding: 1.5rem 0;
