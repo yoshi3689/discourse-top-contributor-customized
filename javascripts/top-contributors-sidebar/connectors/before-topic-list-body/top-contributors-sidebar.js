@@ -2,8 +2,8 @@ import { withPluginApi } from "discourse/lib/plugin-api";
 
 export default {
   setupComponent(attrs, component) {
-    // component.set("hideSidebar", true);
-    // document.querySelector(".topic-list").classList.add("with-sidebar");
+    component.set("hideSidebar", true);
+    document.querySelector(".topic-list").classList.add("with-sidebar");
 
     if (!this.site.mobileView) {
       withPluginApi("0.11", (api) => {
