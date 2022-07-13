@@ -25,10 +25,14 @@
   }
   .top-contributors-container-contributor {
     border-bottom: 1px solid #d2d5d9;
-    padding: .7rem 0;
-    &:nth-child(1)::before {
-      content: "#1 ";
-      
+    padding: 1.5rem 0;
+    :not(:last-child):first-child {
+      margin-right: 0.5rem;
+    }
+    &:nth-child(1) {
+      &::before {
+        content: "#1 ";
+      }
     }
     &:nth-child(2)::before {
       content: "#2 ";
