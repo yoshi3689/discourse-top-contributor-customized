@@ -1,12 +1,12 @@
 {{#unless site.mobileView}}
   {{#if isDiscoveryList}}
     {{#unless hideSidebar}}
-      <div class="discourse-top-contributors">
+      <div class="discourse-top-contributors side-nav">
         <h1 class="top-contributors-heading">
           {{theme-i18n "top_contributors.title"}}
         </h1>
 
-        <div class="top-contributors-container">
+        <div class="top-contributors-container side-nav-container-body">
           {{#each topContributors as |user|}}
             {{top-contributor data=user}}
           {{/each}}
