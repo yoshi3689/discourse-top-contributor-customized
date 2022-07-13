@@ -12,6 +12,11 @@
 //     grid-row: 1;
 //   }
 // }
+
+.with-sidebar {
+  display: block;
+}
+
 .side-nav {
   border: 1px solid #d2d5d9;
   margin-top: 3rem;
@@ -80,9 +85,15 @@
   }
 }
 
-.with-sidebar {
+.side-nav-container-body.links-wrapper {
+  list-style-type: none;
+ > li > a {
   display: block;
+  text-decoration: none;
+  color: inherit;
+ }
 }
+
 @media screen and (min-width: 850px) {
   #list-area > .contents > .topic-list.with-sidebar {
     display: grid;
@@ -111,6 +122,9 @@
     tbody {
       grid-area: body;
       display: table;
+    }
+    .discourse-important-links {
+      grid-area: sidebar2;
     }
   }
 }
