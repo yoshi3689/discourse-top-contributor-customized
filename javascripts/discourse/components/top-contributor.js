@@ -2,7 +2,7 @@ import Component from "@ember/component";
 import User from "discourse/models/user";
 
 export default Component.extend({
-  tagName: "",
+  tagName: "", index: 1,
 
   init() {
     this._super(...arguments);
@@ -10,5 +10,6 @@ export default Component.extend({
     User.findByUsername(this.data.user.username).then((user) => {
       this.set("user", user);
     });
+    this.set("index", index++);
   },
 });

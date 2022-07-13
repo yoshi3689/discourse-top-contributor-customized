@@ -14,6 +14,10 @@
 // }
 .discourse-top-contributors {
   margin-top: 3rem;
+  width: max-content;
+  > h1 {
+    white-space: nowrap;
+  }
 }
 .top-contributors-container-contributor {
   display: flex;
