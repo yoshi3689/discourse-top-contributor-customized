@@ -19,7 +19,7 @@
     white-space: nowrap;
   }
 }
-.top-contributors-container {
+.top-contributors-container .top-contributors-container-contributor {
   &:nth-child(1)::before {
     content: "#1";
     
