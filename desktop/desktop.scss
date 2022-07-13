@@ -3,6 +3,18 @@
 //     display: none;
 //   }
 // }
+// .topic-list-item {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr 4fr;
+//   grid-template-rows: 4fr 1fr 1fr;
+//   .main-link {
+//     grid-column: 1 / 5;
+//     grid-row: 1;
+//   }
+// }
+.discourse-top-contributors {
+  margin-top: 3rem;
+}
 .top-contributors-container-contributor {
   display: flex;
   flex-direction: row;
@@ -73,12 +85,13 @@
   }
 }
 
-.custom-sidebar {
-  #list-area .show-more.has-topics .alert {
-    box-sizing: border-box;
-    width: 75%;
-    @media screen and (max-width: 900px) {
-      width: 73%;
-    }
-  }
-}
+// what is this for?
+// .custom-sidebar {
+//   #list-area .show-more.has-topics .alert {
+//     box-sizing: border-box;
+//     width: 75%;
+//     @media screen and (max-width: 900px) {
+//       width: 73%;
+//     }
+//   }
+// }
