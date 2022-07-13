@@ -1,13 +1,14 @@
+<div class="side-nav-wrapper">
   <div class="discourse-top-contributors side-nav">
-    <h1 class="top-contributors-heading">
-      {{theme-i18n "top_contributors.title"}}
+    <h1 class="side-nav-heading">
+      {{!-- {{theme-i18n "top_contributors.title"}} --}}
+      Top Contributors
     </h1>
 
     <div class="top-contributors-container side-nav-container-body">
       {{#each topContributors as |user|}}
         {{top-contributor data=user}}
       {{/each}}
-
       <div class="top-contributors-container-link">
         <a href="/u?order=likes_received&period=yearly">
           {{theme-i18n "top_contributors.view_all"}}
@@ -16,10 +17,8 @@
     </div>
   </div>
 
-  <div class="discourse-important-links">
-  <h1 class="top-contributors-heading">
-    Important Links
-  </h1>
+  <div class="discourse-important-links side-nav">
+  <h1 class="side-nav-heading">Important Links</h1>
 
   <ul class="side-nav-container-body links-wrapper">
     <li>
@@ -40,6 +39,6 @@
     <li>
       <a href="#">Privacy Policy</a>
     </li>
-
   </ul>
+</div>
 </div>
