@@ -77,11 +77,11 @@
     grid-column-gap: 2%;
     align-items: start;
     grid-template-rows: 50px auto;
-    grid-template-columns: 75% 23%;
-    @media screen and (max-width: 900px) {
-      grid-template-columns: 82% 16%;
+    grid-template-columns: 70% 30%;
+    // @media screen and (max-width: 900px) {
+    //   grid-template-columns: 75% 23%;
       
-    }
+    // }
     grid-template-areas:
       "head sidebar"
       "body sidebar";
