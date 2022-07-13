@@ -50,6 +50,7 @@
   .top-contributors-container-contributor {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
   }
   img.avatar {
     margin-right: 5px;
@@ -99,9 +100,14 @@
 .side-nav-container-body.links-wrapper {
   list-style-type: none;
  > li > a {
-  display: block;
   text-decoration: none;
   color: inherit;
+ }
+}
+
+.side-nav-container-body.links-wrapper {
+  > li> a:hover {
+  color: var(--tertiary);
  }
 }
 
