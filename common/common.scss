@@ -16,6 +16,9 @@
   border: 1px solid #d2d5d9;
   margin-top: 3rem;
   padding: 0;
+  width: 100%;
+  border-radius: 6px;
+  
   .top-contributors-heading {
     font-size: 1.5em;
     padding: 1em;
@@ -91,10 +94,6 @@
     align-items: start;
     grid-template-rows: 50px auto;
     grid-template-columns: 70% 30%;
-    // @media screen and (max-width: 900px) {
-    //   grid-template-columns: 75% 23%;
-      
-    // }
     grid-template-areas:
       "head sidebar"
       "body sidebar";
@@ -108,11 +107,8 @@
       display: block;
       margin-top: 15px;
       grid-area: sidebar;
-      
       border: 1px solid var(--primary-low);
-      width: 100%;
-      border-radius: 6px;
-      box-shadow: 0px 0px 6px -2px rgba(var(--primary-rgb), 0.25);
+      // box-shadow: 0px 0px 6px -2px rgba(var(--primary-rgb), 0.25);
 
     }
     tbody {
