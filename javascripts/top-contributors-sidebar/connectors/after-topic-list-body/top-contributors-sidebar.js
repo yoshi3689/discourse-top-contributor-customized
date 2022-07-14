@@ -39,10 +39,10 @@ export default {
               dropdown1.classList.add('dropdown1-open');
             } else {
               dropdownIcon1.classList.remove('dropdown-icon1-open');
-              dropdown1.classList.add('dropdown1-open');
+              dropdown1.classList.remove('dropdown1-open');
             }
           });
-          
+
           const dropdown2 = document.querySelector(".dropdown2");
           const dropdownIcon2 = document.querySelector(".showDropdown2");
           dropdownIcon2.addEventListener('click', () => {
@@ -52,7 +52,7 @@ export default {
               dropdown2.classList.add('dropdown2-open');
             } else {
               dropdownIcon2.classList.remove('dropdown-icon2-open');
-              dropdown2.classList.add('dropdown2-open');
+              dropdown2.classList.remove('dropdown2-open');
             }
           });
 
