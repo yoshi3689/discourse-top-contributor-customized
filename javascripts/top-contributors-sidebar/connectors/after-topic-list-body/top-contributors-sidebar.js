@@ -42,6 +42,8 @@ export default {
               dropdown1.classList.add('dropdown1-open');
             }
           });
+          
+          const dropdown2 = document.querySelector(".dropdown2");
           const dropdownIcon2 = document.querySelector(".showDropdown2");
           dropdownIcon2.addEventListener('click', () => {
             component.set("showDropdown2", !component.showDropdown2);
