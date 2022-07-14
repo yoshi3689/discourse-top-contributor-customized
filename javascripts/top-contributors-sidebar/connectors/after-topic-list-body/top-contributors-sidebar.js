@@ -3,9 +3,18 @@ import { withPluginApi } from "discourse/lib/plugin-api";
 export default {
   setupComponent(attrs, component) {
     component.set("hideSidebar", true);
-    document.querySelector(".topic-list").classList.add("with-sidebar");
+    let dropdownSwitch1 = false;
+    let dropdownSwitch2 = false;
+    let dropdownSwitch3 = false;
 
-    if (!this.site.mobileView) {
+    component.set("showDropdown1", dropdownSwitch1);
+    component.set("showDropdown2", dropdownSwitch2);
+    component.set("showDropdown3", dropdownSwitch3);
+
+    document.querySelector(".topic-list").classList.add("with-sidebar");
+    const dropdownIcon1 = document.querySelector(".showDropdown1");
+
+    
       withPluginApi("0.11", (api) => {
         api.onPageChange(() => {
           if (settings.enable_top_contributors) {
@@ -25,8 +34,11 @@ export default {
               component.set("isDiscoveryList", false);
             }
           }
+
+          dropdownIcon1.addEventListener('click', () => {
+            component.set("showDropdown1", !dropdownSwitch1);
+          })
         });
       });
-    }
   },
 };

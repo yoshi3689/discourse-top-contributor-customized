@@ -45,28 +45,34 @@
   <div class="discourse-community-browser side-nav">
     <h1 class="side-nav-heading">Community Browser</h1>
     <ul class="side-nav-container-body nested-dropdowns">
+
       <li class="lia-tree-node-7 lia-list-tree-selected">
-        <span title="Category" aria-label="Category"></span>
+        <span title="Category" aria-label="Category">
+          <img
+              title="Click to expand Shopify Discussion category"
+              alt="Click to expand Click to expand Shopify Discussion category Click to collapse Shopify Discussion category"
+              data-close-title="Click to collapse Shopify Discussion category"
+              data-open-title="Click to expand Shopify Discussion category"
+              class="showDropdown1"
+              id="display"
+              src="https://community.shopify.com/skins/images/DB5B1AB4E6308EEBBCAF62256AA16725/responsive_peak/images/icon_toggle_closed_list_tree.png"
+            />
+        </span>
         <a href="https://community.shopify.com/c/community/categorypage/category-id/en">
         Shopify Community
         </a>
+        {{#if showDropdown1}}
         <ul class="lia-list-tree-toggle-container">
           <li class="lia-tree-node-136 lia-list-tree-toggle-node lia-list-tree-closed">
-          <a
-              class="lia-link-navigation lia-js-data-treeNodeId-136 lia-js-data-treeNodeDepth-1 lia-list-tree-toggle lia-component-common-widget-link"
-              tabindex="0"
-              aria-label="Click to expand Shopify Discussion category"
-              id="link_20"
-              href="#"
-            ><img
-                title="Click to expand Shopify Discussion category"
-                alt="Click to expand Click to expand Shopify Discussion category Click to collapse Shopify Discussion category"
-                data-close-title="Click to collapse Shopify Discussion category"
-                data-open-title="Click to expand Shopify Discussion category"
-                class="lia-list-tree-toggle-image"
-                id="display"
-                src="https://community.shopify.com/skins/images/DB5B1AB4E6308EEBBCAF62256AA16725/responsive_peak/images/icon_toggle_closed_list_tree.png"
-              /></a>
+          <img
+              title="Click to expand Shopify Discussion category"
+              alt="Click to expand Click to expand Shopify Discussion category Click to collapse Shopify Discussion category"
+              data-close-title="Click to collapse Shopify Discussion category"
+              data-open-title="Click to expand Shopify Discussion category"
+              class="showDropdown2"
+              id="display"
+              src="https://community.shopify.com/skins/images/DB5B1AB4E6308EEBBCAF62256AA16725/responsive_peak/images/icon_toggle_closed_list_tree.png"
+            />
             <span
               class="lia-img-icon-category lia-fa-icon lia-fa-category lia-fa lia-node-icon"
               title="Category"
@@ -210,6 +216,7 @@
             >Events</a>
           </li>
         </ul>
+        {{/ if}}
       </li>
     </ul>
   </div>
