@@ -64,7 +64,14 @@
         {{#if showDropdown1}}
         <ul class="lia-list-tree-toggle-container">
           <li class="lia-tree-node-136 lia-list-tree-toggle-node lia-list-tree-closed">
-          <img
+            <span
+              class="lia-img-icon-category lia-fa-icon lia-fa-category lia-fa lia-node-icon"
+              title="Category"
+              aria-label="Category"
+              role="img"
+              id="imagedisplay_5"
+            >
+            <img
               title="Click to expand Shopify Discussion category"
               alt="Click to expand Click to expand Shopify Discussion category Click to collapse Shopify Discussion category"
               data-close-title="Click to collapse Shopify Discussion category"
@@ -73,20 +80,14 @@
               id="display"
               src="https://community.shopify.com/skins/images/DB5B1AB4E6308EEBBCAF62256AA16725/responsive_peak/images/icon_toggle_closed_list_tree.png"
             />
-            <span
-              class="lia-img-icon-category lia-fa-icon lia-fa-category lia-fa lia-node-icon"
-              title="Category"
-              aria-label="Category"
-              role="img"
-              id="imagedisplay_5"
-            ></span>
+            </span>
             <a
               class="lia-link-navigation lia-js-data-coreNodeDisplayId-shopify-discussion lia-js-data-coreNodeTypeAndId-category:shopify-discussion lia-js-data-coreNodeId-136 lia-component-forums-widget-community-node-tree-item"
               id="link_21"
               href="https://community.shopify.com/c/community/categorypage/category-id/shopify-discussion"
             >Shopify Discussion</a>
+            {{#if showDropdown2}}
             <ul><li class="lia-tree-node-132">
-              
                 <span
                   class="lia-img-icon-forum-board lia-fa-icon lia-fa-forum lia-fa-board lia-fa lia-node-icon"
                   title="Forum"
@@ -199,7 +200,9 @@
                   href="/c/announcements/bd-p/announcements"
                 >Announcements</a>
               </li>
-              </ul></li>
+              </ul>
+              {{/if}}
+              </li>
           <li class="lia-tree-node-615">
             <span
               class="lia-img-icon-occasion-board lia-fa-icon lia-fa-occasion lia-fa-board lia-fa lia-node-icon"
