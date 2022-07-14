@@ -114,7 +114,9 @@
 
 .discourse-community-browser .nested-dropdowns, .nested-dropdowns ul {
   list-style-type: none;
-  color: inherit !important;
+  a, a:visited {
+    color: inherit !important;
+  }
 }
 
 .showDropdown1, .showDropdown2 {
