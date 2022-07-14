@@ -116,6 +116,10 @@
   list-style-type: none;
 }
 
+.dropdown2-open, .dropdown1-open  {
+  transform: rotate(90deg);
+}
+
 @media screen and (min-width: 850px) {
   #list-area > .contents > .topic-list.with-sidebar {
     display: grid;

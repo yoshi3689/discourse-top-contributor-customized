@@ -33,10 +33,20 @@ export default {
           const dropdownIcon1 = document.querySelector(".showDropdown1");
           dropdownIcon1.addEventListener('click', () => {
             component.set("showDropdown1", !component.showDropdown1);
-            // let dropdownIcon2 = document.querySelector(".showDropdown2");
-            // dropdownIcon2.addEventListener('click', () => {
-            //   this.set("showDropdown2", !this.showDropdown2);
-            // });
+            if (component.showDropdown1) {
+              dropdownIcon1.classList.add('dropdown1-open');
+            } else {
+              dropdownIcon1.classList.remove('dropdown1-open');
+            }
+            let dropdownIcon2 = document.querySelector(".showDropdown2");
+            dropdownIcon2.addEventListener('click', () => {
+              component.set("showDropdown2", !component.showDropdown2);
+              if (component.showDropdown2) {
+                dropdownIcon1.classList.add('dropdown2-open');
+              } else {
+                dropdownIcon1.classList.remove('dropdown2-open');
+              }
+            });
           });
 
 
