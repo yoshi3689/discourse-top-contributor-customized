@@ -3,13 +3,10 @@ import { withPluginApi } from "discourse/lib/plugin-api";
 export default {
   setupComponent(attrs, component) {
     component.set("hideSidebar", true);
-    let dropdownSwitch1 = false;
-    let dropdownSwitch2 = false;
-    let dropdownSwitch3 = false;
 
-    component.set("showDropdown1", dropdownSwitch1);
-    component.set("showDropdown2", dropdownSwitch2);
-    component.set("showDropdown3", dropdownSwitch3);
+    component.set("showDropdown1", false);
+    component.set("showDropdown2", false);
+    component.set("showDropdown3", false);
 
     document.querySelector(".topic-list").classList.add("with-sidebar");
 
@@ -35,8 +32,15 @@ export default {
           }
           const dropdownIcon1 = document.querySelector(".showDropdown1");
           dropdownIcon1.addEventListener('click', () => {
-            component.set("showDropdown1", !dropdownSwitch1);
-          })
+            component.set("showDropdown1", !showDropdown1);
+          });
+
+          const dropdownIcon2 = document.querySelector(".showDropdown2");
+          dropdownIcon2.addEventListener('click', () => {
+            component.set("showDropdown2", !showDropdown2);
+          });
+
+
         });
       });
   },
