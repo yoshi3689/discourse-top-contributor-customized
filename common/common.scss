@@ -116,8 +116,11 @@
   list-style-type: none;
 }
 
-.dropdown2-open, .dropdown1-open  {
+.dropdown-icon2-open, .dropdown-icon1-open  {
   transform: rotate(90deg);
+}
+.dropdown1-open, .dropdown2-open  {
+  display: block;
 }
 
 @media screen and (min-width: 850px) {
