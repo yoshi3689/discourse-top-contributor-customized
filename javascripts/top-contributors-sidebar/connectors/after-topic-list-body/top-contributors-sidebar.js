@@ -4,9 +4,9 @@ export default {
   setupComponent(attrs, component) {
     component.set("hideSidebar", true);
 
-    component.set("showDropdown1", false);
-    component.set("showDropdown2", false);
-    component.set("showDropdown3", false);
+    this.set("showDropdown1", false);
+    this.set("showDropdown2", false);
+    this.set("showDropdown3", false);
 
     document.querySelector(".topic-list").classList.add("with-sidebar");
 
@@ -30,12 +30,13 @@ export default {
               component.set("isDiscoveryList", false);
             }
           }
+          
           const dropdownIcon1 = document.querySelector(".showDropdown1");
           dropdownIcon1.addEventListener('click', () => {
-            component.set("showDropdown1", !showDropdown1);
+            this.set("showDropdown1", !this.showDropdown1);
             let dropdownIcon2 = document.querySelector(".showDropdown2");
             dropdownIcon2.addEventListener('click', () => {
-              component.set("showDropdown2", !showDropdown2);
+              this.set("showDropdown2", !this.showDropdown2);
             });
           });
 
