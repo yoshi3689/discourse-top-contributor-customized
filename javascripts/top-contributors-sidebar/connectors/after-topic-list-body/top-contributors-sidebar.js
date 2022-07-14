@@ -33,11 +33,10 @@ export default {
           const dropdownIcon1 = document.querySelector(".showDropdown1");
           dropdownIcon1.addEventListener('click', () => {
             component.set("showDropdown1", !showDropdown1);
-          });
-
-          const dropdownIcon2 = document.querySelector(".showDropdown2");
-          dropdownIcon2.addEventListener('click', () => {
-            component.set("showDropdown2", !showDropdown2);
+            let dropdownIcon2 = document.querySelector(".showDropdown2");
+            dropdownIcon2.addEventListener('click', () => {
+              component.set("showDropdown2", !showDropdown2);
+            });
           });
 
 
