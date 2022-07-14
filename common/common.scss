@@ -107,7 +107,7 @@
 }
 
 .side-nav-container-body.links-wrapper {
-  > li> a:hover {
+  > li > a:hover {
   color: var(--tertiary);
  }
 }
@@ -115,8 +115,14 @@
 .discourse-community-browser .nested-dropdowns, .nested-dropdowns ul {
   list-style-type: none;
 }
+
+.showDropdown1, .showDropdown2 {
+  cursor: pointer;
+}
+
 .dropdown1, .dropdown2 {
   display: none;
+  color: inherit;
   // can change depending on the size of the icon?
   margin-left: 1rem;
 }
