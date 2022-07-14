@@ -115,7 +115,7 @@
 .discourse-community-browser .nested-dropdowns, .nested-dropdowns ul {
   list-style-type: none;
   a, a:visited {
-    color: inherit !important;
+    color: inherit;
   }
   a:hover {
     color: var(--tertiary);
