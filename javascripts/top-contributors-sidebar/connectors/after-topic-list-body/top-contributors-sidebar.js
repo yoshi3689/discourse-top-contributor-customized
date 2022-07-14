@@ -12,7 +12,6 @@ export default {
     component.set("showDropdown3", dropdownSwitch3);
 
     document.querySelector(".topic-list").classList.add("with-sidebar");
-    const dropdownIcon1 = document.querySelector(".showDropdown1");
 
     
       withPluginApi("0.11", (api) => {
@@ -34,7 +33,7 @@ export default {
               component.set("isDiscoveryList", false);
             }
           }
-
+          const dropdownIcon1 = document.querySelector(".showDropdown1");
           dropdownIcon1.addEventListener('click', () => {
             component.set("showDropdown1", !dropdownSwitch1);
           })
