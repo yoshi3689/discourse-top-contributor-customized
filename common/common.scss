@@ -112,6 +112,10 @@
  }
 }
 
+.discourse-community-browser .nested-dropdowns, .nested-dropdowns ul {
+  list-style-type: none;
+}
+
 @media screen and (min-width: 850px) {
   #list-area > .contents > .topic-list.with-sidebar {
     display: grid;
