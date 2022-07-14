@@ -114,6 +114,7 @@
 
 .discourse-community-browser .nested-dropdowns, .nested-dropdowns ul {
   list-style-type: none;
+  color: inherit !important;
 }
 
 .showDropdown1, .showDropdown2 {
@@ -122,7 +123,6 @@
 
 .dropdown1, .dropdown2 {
   display: none;
-  color: inherit !important;
   // can change depending on the size of the icon?
   margin-left: 1rem;
 }
