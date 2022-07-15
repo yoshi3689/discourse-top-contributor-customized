@@ -117,6 +117,7 @@
   list-style-type: none;
   a, a:visited {
     color: inherit;
+    white-space: nowrap;
   }
   a:hover {
     color: var(--tertiary);
