@@ -33,6 +33,7 @@
   }
 }
 
+
 .side-nav-container-body  {
   padding: 0 1em;
 }
@@ -120,6 +121,9 @@
   a:hover {
     color: var(--tertiary);
    }
+  .fa.d-icon {
+    color: var(--tertiary);
+  }
 }
 
 .showDropdown1, .showDropdown2 {
