@@ -56,6 +56,25 @@ export default {
             }
           });
 
+          const onPreviousClick = () => {
+            counter > 0  ? setCounter(counter - 1) : setCounter(items.length - 1);
+            console.log(counter, items.length);
+          };
+          const onNextClick = () => {
+            counter < items.length - 1 ? setCounter(1 + counter) : setCounter(0);
+            console.log(counter);
+          };
+        
+          const onDotClick = ({ target }) => {
+            if (target.classList[0]) {
+              console.log(target.classList[1])
+              setCounter(target.classList[1])
+            } else if (target.parentNode.classList[0]) {
+              console.log(target.parentNode.classList)
+              setCounter(target.parentNode.classList[1])
+            }
+          }
+
 
         });
       });
