@@ -90,15 +90,15 @@
               href="/categories"
             >G2G Discussion</a>
             <ul class="dropdown2">
-                    {{#each categories}}
+                    {{#each categories as |category|}}
                       <li>
                         <span>
                           {{d-icon "comment"}}
                         </span>
-                        {{#with this}}
+                        {{#with category}}
                           <a href={{url}}>{{name}}</a>
                         {{/with}}
-                        
+                        {{category-link content=category}}
                       </li>
                     {{/each}}
               <li class="lia-tree-node-125">

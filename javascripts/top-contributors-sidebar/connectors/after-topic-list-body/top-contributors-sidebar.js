@@ -36,7 +36,7 @@ export default {
           .then(data => data.map(category => {
             console.log(category);
               return {
-                url: `c/${category.slug}/${category.id}`,
+                url: `/c/${category.slug}/${category.id}`,
                 name: category.name
               };
             })
