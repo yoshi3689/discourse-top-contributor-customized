@@ -32,20 +32,18 @@ export default {
 
           fetch('/categories.json')
           .then(res => res.json())
-          .then(res => res.categories)
-          .then(res => console.log(res))
-          .then(data => data.map(category => {
-              return {
-                url: `c/${category.slug}/${category.id}`,
-                name: category.name
-              };
-            })
-          )
-          .then(data => {
-            console.log(data);
-            this.set("categories", data);
-          });
-          ;
+          .then(res => console.log(res.categories))
+          // .then(data => data.map(category => {
+          //     return {
+          //       url: `c/${category.slug}/${category.id}`,
+          //       name: category.name
+          //     };
+          //   })
+          // )
+          // .then(data => {
+          //   console.log(data);
+          //   this.set("categories", data);
+          // });
           
           const dropdown1 = document.querySelector(".dropdown1");
           const dropdownIcon1 = document.querySelector(".showDropdown1");
