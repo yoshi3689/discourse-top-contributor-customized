@@ -5,6 +5,7 @@ export default Component.extend({
 
   init() {
     this._super(...arguments);
-    this.set("category", this.content.category)
+    console.log(this.content.category);
+    this.set("category", this.content.category);
   },
 });

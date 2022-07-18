@@ -34,7 +34,7 @@ export default {
           .then(res => res.json())
           .then(res => res.category_list.categories)
           .then(data => data.map(category => {
-            console.log(category);
+            // console.log(category);
               return {
                 url: `/c/${category.slug}/${category.id}`,
                 name: category.name
