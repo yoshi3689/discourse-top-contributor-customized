@@ -4,6 +4,7 @@ export default Component.extend({
   tagName: "",
 
   init() {
+
     this._super(...arguments);
     fetch('/categories.json')
     .then(res => res.json())
