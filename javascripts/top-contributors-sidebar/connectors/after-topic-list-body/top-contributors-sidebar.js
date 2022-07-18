@@ -32,11 +32,10 @@ export default {
 
           fetch('/categories.json')
           .then(res => res.json())
-          .then(categories => categories.map((category, index) => {
-            [id, name, slug] = category;
+          .then(categories => categories.map(category => {
             return {
-              url: `c/${slug}/${id}`,
-              name,
+              url: `c/${category.slug}/${category.id}`,
+              name: category.name
             };
           }))
           .then(data => {
