@@ -95,8 +95,10 @@
                         <span>
                           {{d-icon "comment"}}
                         </span>
-                        {{this}}
-                        <a href={{this.url}}>{{this.name}}</a>
+                        {{#with this}}
+                          <a href={{url}}>{{name}}</a>
+                        {{/with}}
+                        
                       </li>
                     {{/each}}
               <li class="lia-tree-node-125">
