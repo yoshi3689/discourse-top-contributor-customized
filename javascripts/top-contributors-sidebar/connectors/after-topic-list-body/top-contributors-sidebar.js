@@ -32,8 +32,6 @@ export default {
 
           fetch('/categories.json')
           .then(res => {
-            console.log(res);
-            console.log(res.json());
             res.json();
           })
           .then(data => {
