@@ -23,6 +23,7 @@ export default {
               fetch(`/directory_items.json?period=yearly&order=likes_received`)
                 .then((response) => response.json())
                 .then((data) => {
+                  component.set("hideSidebar", false);
                   this.set("topContributors", data.directory_items.slice(0, 5));
                 });
             } else {
@@ -30,11 +31,10 @@ export default {
             }
           }
 
+          
           fetch('/categories.json')
-          .then(res => {
-            res.json();
-          })
-          .then(data => console.log(data))
+          .then(res => res.json())
+          .then(res => console.log(res));
           
           const dropdown1 = document.querySelector(".dropdown1");
           const dropdownIcon1 = document.querySelector(".showDropdown1");
