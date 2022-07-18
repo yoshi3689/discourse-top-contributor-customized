@@ -36,9 +36,9 @@ export default {
             console.log(res.json());
             res.json();
           })
-          .then(categories => {
-            console.log(categories);
-            return categories.map(category => {
+          .then(data => {
+            console.log(data);
+            return data.map(category => {
               return {
                 url: `c/${category.slug}/${category.id}`,
                 name: category.name
