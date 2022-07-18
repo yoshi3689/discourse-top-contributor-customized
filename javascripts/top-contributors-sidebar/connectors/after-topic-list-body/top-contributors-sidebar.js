@@ -32,6 +32,8 @@ export default {
 
           fetch('/categories.json')
           .then(res => {
+            console.log(res);
+            console.log(res.json());
             res.json();
           })
           .then(categories => {
@@ -47,6 +49,7 @@ export default {
             console.log(data);
             this.set("categories", data);
           });
+
           
           const dropdown1 = document.querySelector(".dropdown1");
           const dropdownIcon1 = document.querySelector(".showDropdown1");
