@@ -39,7 +39,10 @@ export default {
               name,
             };
           }))
-          .then(data => this.set("categories", data));
+          .then(data => {
+            console.log(data);
+            this.set("categories", data);
+          });
           
           const dropdown1 = document.querySelector(".dropdown1");
           const dropdownIcon1 = document.querySelector(".showDropdown1");
