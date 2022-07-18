@@ -33,6 +33,10 @@ export default {
 
           const router = getOwner(this).lookup("router:main");
           console.log(router);
+
+          fetch('/categories.json')
+          .then(res => res.json())
+          .then(res => console.log(res));
           
           const dropdown1 = document.querySelector(".dropdown1");
           const dropdownIcon1 = document.querySelector(".showDropdown1");
