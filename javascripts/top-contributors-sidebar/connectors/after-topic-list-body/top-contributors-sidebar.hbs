@@ -90,9 +90,14 @@
               href="/categories"
             >G2G Discussion</a>
             <ul class="dropdown2">
-                    {{#each categories as |category|}}
-                      {{category-link data=category}}
-                    {{/each}}
+                    {{#categories}}
+                      <li>
+                        <span>
+                          {{d-icon "comment"}}
+                        </span>
+                        <a href={{category.url}}>{{category.name}}</a>
+                      </li>
+                    {{/categories}}
               <li class="lia-tree-node-125">
                 <span
                   class="lia-img-icon-forum-board lia-fa-icon lia-fa-forum lia-fa-board lia-fa lia-node-icon"
