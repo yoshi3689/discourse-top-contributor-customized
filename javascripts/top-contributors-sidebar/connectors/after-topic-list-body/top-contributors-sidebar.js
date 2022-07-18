@@ -32,9 +32,21 @@ export default {
 
           fetch('/categories.json')
           .then(res => res.json())
-          .then(res => {
-            console.log(res.categories);
+          .then(res => res.categories)
+          .then(data => {
+            console.log(data);
+            return data.map(category => {
+              return {
+                url: `c/${category.slug}/${category.id}`,
+                name: category.name
+              };
+            })
           })
+          .then(data => {
+            console.log(data);
+            this.set("categories", data);
+          });
+          ;
           
           const dropdown1 = document.querySelector(".dropdown1");
           const dropdownIcon1 = document.querySelector(".showDropdown1");
