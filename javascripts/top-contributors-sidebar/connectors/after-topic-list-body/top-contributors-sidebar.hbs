@@ -95,7 +95,8 @@
                         <span>
                           {{d-icon "comment"}}
                         </span>
-                        {{#with categories}}
+                        {{@index}}: {{this}}
+                        {{#with this}}
                           <a href={{url}}>{{name}}</a>
                         {{/with}}
                         
