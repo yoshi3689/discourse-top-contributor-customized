@@ -34,17 +34,7 @@ export default {
           .then(res => res.json())
           .then(res => {
             console.log(res.categories);
-            res.categories.map(category => {
-              return {
-                url: `c/${category.slug}/${category.id}`,
-                name: category.name
-              };
-            })
-            .then(data => {
-              console.log(data);
-              this.set("categories", data);
-            });
-          });
+          })
           
           const dropdown1 = document.querySelector(".dropdown1");
           const dropdownIcon1 = document.querySelector(".showDropdown1");
