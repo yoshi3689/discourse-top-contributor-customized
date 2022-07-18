@@ -33,6 +33,7 @@ export default {
           fetch('/categories.json')
           .then(res => res.json())
           .then(res => res.categories)
+          .then(res => console.log(res))
           .then(data => data.map(category => {
               return {
                 url: `c/${category.slug}/${category.id}`,
