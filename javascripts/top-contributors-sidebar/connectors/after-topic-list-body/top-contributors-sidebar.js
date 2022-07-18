@@ -23,7 +23,6 @@ export default {
               fetch(`/directory_items.json?period=yearly&order=likes_received`)
                 .then((response) => response.json())
                 .then((data) => {
-                  component.set("hideSidebar", false);
                   this.set("topContributors", data.directory_items.slice(0, 5));
                 });
             } else {
@@ -31,12 +30,16 @@ export default {
             }
           }
 
-          const router = getOwner(this).lookup("router:main");
-          console.log(router);
-
           fetch('/categories.json')
           .then(res => res.json())
-          .then(res => console.log(res));
+          .then(categories => categories.map((category, index) => {
+            [id, name, slug] = category;
+            return {
+              url: `c/${slug}/${id}`,
+              name,
+            };
+          }))
+          .then(data => this.set("categories", data));
           
           const dropdown1 = document.querySelector(".dropdown1");
           const dropdownIcon1 = document.querySelector(".showDropdown1");

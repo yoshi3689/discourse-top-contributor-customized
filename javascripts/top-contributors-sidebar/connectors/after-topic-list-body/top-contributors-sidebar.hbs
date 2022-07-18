@@ -90,6 +90,9 @@
               href="/categories"
             >G2G Discussion</a>
             <ul class="dropdown2">
+                    {{#each categories as |categoryData|}}
+                    {{category data=categoryData}}
+                    {{/each}}
               <li class="lia-tree-node-125">
                 <span
                   class="lia-img-icon-forum-board lia-fa-icon lia-fa-forum lia-fa-board lia-fa lia-node-icon"
