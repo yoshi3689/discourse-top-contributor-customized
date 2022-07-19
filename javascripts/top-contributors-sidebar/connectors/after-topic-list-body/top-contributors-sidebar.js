@@ -34,7 +34,6 @@ export default {
           .then(res => res.json())
           .then(res => res.category_list.categories)
           .then(data => data.map(category => {
-            // console.log(category);
               return {
                 url: `/c/${category.slug}/${category.id}`,
                 name: category.name
@@ -42,7 +41,6 @@ export default {
             })
           )
           .then(data => {
-            console.log(data);
             this.set("categories", data);
           });
           
@@ -71,27 +69,6 @@ export default {
               dropdown2.classList.remove('dropdown2-open');
             }
           });
-
-          const onPreviousClick = () => {
-            counter > 0  ? setCounter(counter - 1) : setCounter(items.length - 1);
-            console.log(counter, items.length);
-          };
-          const onNextClick = () => {
-            counter < items.length - 1 ? setCounter(1 + counter) : setCounter(0);
-            console.log(counter);
-          };
-        
-          const onDotClick = ({ target }) => {
-            if (target.classList[0]) {
-              console.log(target.classList[1])
-              setCounter(target.classList[1])
-            } else if (target.parentNode.classList[0]) {
-              console.log(target.parentNode.classList)
-              setCounter(target.parentNode.classList[1])
-            }
-          }
-
-
         });
       });
   },

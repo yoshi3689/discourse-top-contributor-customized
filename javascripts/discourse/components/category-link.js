@@ -5,7 +5,6 @@ export default Component.extend({
 
   init() {
     this._super(...arguments);
-    console.log(this.data);
     this.set("category", this.data);
   },
 });
