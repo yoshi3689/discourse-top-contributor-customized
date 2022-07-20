@@ -1,18 +1,3 @@
-// .topic-list.with-sidebar {
-//   > div {
-//     display: none;
-//   }
-// }
-// .topic-list-item {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr 1fr 4fr;
-//   grid-template-rows: 4fr 1fr 1fr;
-//   .main-link {
-//     grid-column: 1 / 5;
-//     grid-row: 1;
-//   }
-// }
-
 .with-sidebar {
   display: block;
 }
@@ -30,6 +15,10 @@
     // white-space: nowrap;
     background-color: #FAF9F8;
   }
+}
+
+.discourse-community-browser, .discourse-important-links {
+  margin-top: 3rem;
 }
 
 
@@ -164,6 +153,7 @@
     }
     > .side-nav-wrapper {
       grid-area: sidebar2;
+      margin-top: 3rem;
       .side-nav {
         overflow: hidden;
       }
@@ -172,9 +162,6 @@
     tbody {
       grid-area: body;
       display: table;
-    }
-    .discourse-community-browser, .discourse-important-links {
-      margin-top: 3rem;
     }
   }
 }
