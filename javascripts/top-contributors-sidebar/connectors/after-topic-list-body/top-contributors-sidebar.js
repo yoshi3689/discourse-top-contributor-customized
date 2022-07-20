@@ -8,10 +8,8 @@ export default {
     component.set("showDropdown2", false);
     component.set("showDropdown3", false);
 
-    
-    document.querySelector(".topic-list").classList.add("with-sidebar");
     console.log(document.querySelector(".topic-list"));
-
+    document.querySelector(".topic-list").classList.add("with-sidebar");
       withPluginApi("0.11", (api) => {
         api.onPageChange(() => {
           if (settings.enable_top_contributors) {
