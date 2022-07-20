@@ -2,6 +2,10 @@
   display: block;
 }
 
+.side-nav-wrapper {
+  margin-top: 3rem;
+}
+
 .side-nav {
   border: 1px solid #d2d5d9;
   padding: 0;
@@ -153,7 +157,7 @@
     }
     > .side-nav-wrapper {
       grid-area: sidebar2;
-      margin-top: 3rem;
+      margin-top: 0;
       .side-nav {
         overflow: hidden;
       }
