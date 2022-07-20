@@ -19,7 +19,6 @@
 
 .side-nav {
   border: 1px solid #d2d5d9;
-  margin-top: 3rem;
   padding: 0;
   width: 100%;
   border-radius: 6px;
@@ -97,7 +96,6 @@
   }
 }
 
-// important links
 .side-nav-container-body.links-wrapper {
   list-style-type: none;
   margin: 0;
@@ -174,6 +172,9 @@
     tbody {
       grid-area: body;
       display: table;
+    }
+    .discourse-community-browser, .discourse-important-links {
+      margin-top: 3rem;
     }
   }
 }
