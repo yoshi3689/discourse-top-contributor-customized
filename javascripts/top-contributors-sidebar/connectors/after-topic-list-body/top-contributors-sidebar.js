@@ -8,7 +8,9 @@ export default {
     component.set("showDropdown2", false);
     component.set("showDropdown3", false);
 
+    
     document.querySelector(".topic-list").classList.add("with-sidebar");
+    console.log(document.querySelector(".topic-list"));
 
       withPluginApi("0.11", (api) => {
         api.onPageChange(() => {
