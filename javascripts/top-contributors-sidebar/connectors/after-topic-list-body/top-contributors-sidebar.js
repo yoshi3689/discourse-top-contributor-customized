@@ -10,6 +10,7 @@ export default {
 
     console.log(document.querySelector(".topic-list"));
     document.querySelector(".topic-list").classList.add("with-sidebar");
+    console.log(document.querySelector(".topic-list"));
       withPluginApi("0.11", (api) => {
         api.onPageChange(() => {
           if (settings.enable_top_contributors) {
