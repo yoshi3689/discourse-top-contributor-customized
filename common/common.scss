@@ -147,16 +147,15 @@
     grid-template-rows: 50px auto auto auto;
     grid-template-columns: 65% 32%;
     grid-template-areas:
-      "head sidebar1"
-      "body sidebar2"
+      "body sidebar"
       ;
-    thead {
-      grid-area: head;
-      display: table;
-      align-self: end;
-    }
+    // thead {
+    //   grid-area: head;
+    //   display: table;
+    //   align-self: end;
+    // }
     > .side-nav-wrapper {
-      grid-area: sidebar2;
+      grid-area: sidebar;
       margin-top: 0;
       .side-nav {
         overflow: hidden;
