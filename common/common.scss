@@ -108,14 +108,13 @@
 
 .discourse-community-browser .nested-dropdowns, .nested-dropdowns ul {
   list-style-type: none;
-  margin: 0;
   li {
-    margin-bottom: 1rem;
     white-space: nowrap;
   }
   a, a:visited {
     color: inherit;
     white-space: nowrap;
+    margin-bottom: 1rem;
   }
   a:hover {
     color: var(--tertiary);
@@ -123,6 +122,10 @@
   .fa.d-icon {
     color: var(--tertiary);
   }
+}
+
+.nested-dropdowns {
+  margin: 0;
 }
 
 .showDropdown1, .showDropdown2 {
