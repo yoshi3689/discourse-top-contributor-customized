@@ -4,6 +4,9 @@
 
 .side-nav-wrapper {
   margin-top: 3rem;
+  .question-btn {
+    display: none;
+  }
 }
 
 .side-nav {
@@ -106,6 +109,11 @@
 
 .discourse-community-browser .nested-dropdowns, .nested-dropdowns ul {
   list-style-type: none;
+  margin: 0;
+  li {
+    margin-bottom: 1rem;
+    white-space: nowrap;
+  }
   a, a:visited {
     color: inherit;
     white-space: nowrap;
@@ -154,6 +162,9 @@
     //   display: table;
     //   align-self: end;
     // }
+    .question-btn {
+      display: block;
+    }
     > .side-nav-wrapper {
       grid-area: sidebar;
       margin-top: 0;
