@@ -5,7 +5,7 @@
 .side-nav-wrapper {
   margin-top: 3rem;
   .question-btn {
-    display: none;
+    margin-bottom: 3rem;
   }
 }
 
@@ -19,7 +19,6 @@
     font-size: 18px;
     padding: 1em;
     border-bottom: 1px solid #d2d5d9;
-    // white-space: nowrap;
     background-color: #FAF9F8;
   }
 }
@@ -163,7 +162,7 @@
     //   align-self: end;
     // }
     .question-btn {
-      display: block;
+      display: none;
     }
     > .side-nav-wrapper {
       grid-area: sidebar;
