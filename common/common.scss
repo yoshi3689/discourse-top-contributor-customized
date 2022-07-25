@@ -124,15 +124,18 @@
   }
 }
 
-// .nested-dropdowns {
-//   margin: 0;
-//   .dropdown1 {
-//     margin: 1rem 0;
-//     >li:not(:last-child) {
-//       margin-bottom: 1rem;
-//     }
-//   }
-// }
+.nested-dropdowns {
+  margin-left: 0;
+  li > a:not(:last-child) {
+    margin-bottom: 1;
+  }
+  // .dropdown1 {
+  //   margin: 1rem 0;
+  //   >li:not(:last-child) {
+  //     margin-bottom: 1rem;
+  //   }
+  // }
+}
 
 .showDropdown1, .showDropdown2 {
   cursor: pointer;
@@ -145,7 +148,7 @@
 }
 
 .dropdown2 {
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .dropdown-icon2-open, .dropdown-icon1-open  {
