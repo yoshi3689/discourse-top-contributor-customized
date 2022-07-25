@@ -72,8 +72,8 @@ export default {
           });
 
           const realQuestionBtn = document.querySelector('#create-topic');
-          if (realQuestionBtn) {
-            const container = document.querySelector('.side-nav-wrapper');
+          const container = document.querySelector('.side-nav-wrapper');
+          if (realQuestionBtn && container) {
             const visibleQuestionBtn = container.querySelector('.question-btn');
             visibleQuestionBtn.addEventListener('click', e => {
               realQuestionBtn.click();
