@@ -126,7 +126,7 @@
 
 .nested-dropdowns {
   margin-left: 0;
-  li > a:not(:last-child) {
+  li > a {
     margin-bottom: 1;
   }
   // .dropdown1 {
