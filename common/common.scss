@@ -126,16 +126,10 @@
 
 .nested-dropdowns {
   margin-left: 0;
-  li > a {
+  li {
     display: inline-block;
     margin-bottom: 1rem;
   }
-  // .dropdown1 {
-  //   margin: 1rem 0;
-  //   >li:not(:last-child) {
-  //     margin-bottom: 1rem;
-  //   }
-  // }
 }
 
 .showDropdown1, .showDropdown2 {
