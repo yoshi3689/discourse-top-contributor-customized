@@ -2,6 +2,11 @@
   display: block;
 }
 
+// for the editor
+.d-editor-preview > p {
+  margin-bottom: 1rem;
+}
+
 .side-nav-wrapper {
   margin-top: 3rem;
   .question-btn {
@@ -181,7 +186,6 @@
         overflow: hidden;
       }
     }
-    
     tbody {
       grid-area: body;
       display: table;
