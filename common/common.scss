@@ -126,8 +126,12 @@
 
 .nested-dropdowns {
   margin-left: 0;
-  li:not(:last-child) {
+  li > a {
+    display: inline-block;
     margin-bottom: 1rem;
+  }
+  .menu-item-last {
+    margin-bottom: 0;
   }
 }
 
