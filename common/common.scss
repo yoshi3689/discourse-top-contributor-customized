@@ -65,6 +65,7 @@
   }
   .top-contributors-container-contributor-likes {
     margin-left: auto;
+    white-space: nowrap;
     .fa {
       fill: var(--love);
     }
