@@ -127,7 +127,8 @@
 .nested-dropdowns {
   margin-left: 0;
   li > a {
-    margin-bottom: 1;
+    display: inline-block;
+    margin-bottom: 1rem;
   }
   // .dropdown1 {
   //   margin: 1rem 0;
