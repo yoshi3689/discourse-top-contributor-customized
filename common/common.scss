@@ -124,9 +124,15 @@
   }
 }
 
-.nested-dropdowns {
-  margin: 0;
-}
+// .nested-dropdowns {
+//   margin: 0;
+//   .dropdown1 {
+//     margin: 1rem 0;
+//     >li:not(:last-child) {
+//       margin-bottom: 1rem;
+//     }
+//   }
+// }
 
 .showDropdown1, .showDropdown2 {
   cursor: pointer;

@@ -45,6 +45,8 @@ export default {
             this.set("categories", data);
           });
           
+
+
           const dropdown1 = document.querySelector(".dropdown1");
           const dropdownIcon1 = document.querySelector(".showDropdown1");
           dropdownIcon1.addEventListener('click', () => {
@@ -70,6 +72,15 @@ export default {
               dropdown2.classList.remove('dropdown2-open');
             }
           });
+
+          const realQuestionBtn = document.querySelector('#create-topic');
+          if (realQuestionBtn) {
+            const container = document.querySelector('.side-nav-wrapper');
+            const visibleQuestionBtn = container.querySelector('.question-btn');
+            visibleQuestionBtn.addEventListener('click', e => {
+              realQuestionBtn.click();
+            })
+          }
         });
       });
   },
