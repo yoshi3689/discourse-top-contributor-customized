@@ -1,7 +1,6 @@
 import { apiInitializer } from "discourse/lib/api";
 
 export default apiInitializer("0.8", (api) => {
-  document.querySelector(".topic-list").classList.add("with-sidebar");
     const connectorNameToDisable =
       window.location.pathname.includes("/t/") ?
       "after-topic-list-body" :
@@ -12,6 +11,7 @@ export default apiInitializer("0.8", (api) => {
       },
     });
     api.onPageChange(() => {
+      document.querySelector(".topic-list").classList.add("with-sidebar");
       const realQuestionBtn = document.querySelector('#create-topic');
       const container = document.querySelector('.side-nav-wrapper');
       if (realQuestionBtn && container) {
