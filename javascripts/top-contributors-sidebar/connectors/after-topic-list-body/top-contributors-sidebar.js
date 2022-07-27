@@ -11,23 +11,23 @@ export default {
     document.querySelector(".topic-list").classList.add("with-sidebar");
       withPluginApi("0.11", (api) => {
         api.onPageChange(() => {
-          if (settings.enable_top_contributors) {
-            if (this.discoveryList) {
-              if (this.isDestroyed || this.isDestroying) {
-                return;
-              }
-              component.set("isDiscoveryList", true);
+          // if (settings.enable_top_contributors) {
+          //   if (this.discoveryList) {
+          //     if (this.isDestroyed || this.isDestroying) {
+          //       return;
+          //     }
+          //     component.set("isDiscoveryList", true);
 
-              fetch(`/directory_items.json?period=yearly&order=likes_received`)
-                .then((response) => response.json())
-                .then((data) => {
-                  component.set("hideSidebar", false);
-                  this.set("topContributors", data.directory_items.slice(0, 5));
-                });
-            } else {
-              component.set("isDiscoveryList", false);
-            }
-          }
+          //     fetch(`/directory_items.json?period=yearly&order=likes_received`)
+          //       .then((response) => response.json())
+          //       .then((data) => {
+          //         component.set("hideSidebar", false);
+          //         this.set("topContributors", data.directory_items.slice(0, 5));
+          //       });
+          //   } else {
+          //     component.set("isDiscoveryList", false);
+          //   }
+          // }
 
           fetch('/categories.json')
           .then(res => res.json())
