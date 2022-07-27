@@ -14,6 +14,7 @@ export default apiInitializer("0.8", (api) => {
       if (!window.location.pathname.includes("/t/")) {
         document.querySelector(".topic-list").classList.add("with-sidebar");
       }
+  
       const realQuestionBtn = document.querySelector('#create-topic');
       const container = document.querySelector('.side-nav-wrapper');
       if (realQuestionBtn && container) {
