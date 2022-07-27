@@ -25,7 +25,13 @@ export default apiInitializer("0.8", (api) => {
         })
       }
 
-      
+      document.addEventListener("DOMContentLoaded", (e) => {
+        const footerButtons = document.querySelector("#topic-footer-buttons");
+        if (footerButtons) {
+          const postContent = document.querySelector(".posts");
+          postContent.appendChild(footerButtons);
+        }
+      })
     });
   
 })
