@@ -1,10 +1,10 @@
 import { apiInitializer } from "discourse/lib/api";
 
 export default apiInitializer("0.8", (api) => {
-  this.set("hideSidebar", true);
-  this.set("showDropdown1", false);
-  this.set("showDropdown2", false);
-  this.set("showDropdown3", false);
+  this.state.hideSidebar = true
+  this.state.showDropdown1 = false
+  this.state.showDropdown2 = false
+  this.state.showDropdown3 = false
 
   document.querySelector(".topic-list").classList.add("with-sidebar");
     const connectorNameToDisable =
@@ -22,16 +22,16 @@ export default apiInitializer("0.8", (api) => {
           if (this.isDestroyed || this.isDestroying) {
             return;
           }
-          this.set("isDiscoveryList", true);
+          this.state.isDiscoveryList = true
 
           fetch(`/directory_items.json?period=yearly&order=likes_received`)
             .then((response) => response.json())
             .then((data) => {
-              this.set("hideSidebar", false);
-              this.set("topContributors", data.directory_items.slice(0, 5));
+              this.state.hideSidebar = false
+              this.state.topContributors = data.directory_items.slice(0, 5)
             });
         } else {
-          this.set("isDiscoveryList", false);
+          this.state.isDiscoveryList = false
         }
       }
 
@@ -45,13 +45,13 @@ export default apiInitializer("0.8", (api) => {
           };
         }))
         .then(data => {
-          this.set("categories", data);
+          this.state.categories = data
         });
 
       const dropdown1 = document.querySelector(".dropdown1");
       const dropdownIcon1 = document.querySelector(".showDropdown1");
       dropdownIcon1.addEventListener('click', () => {
-        this.set("showDropdown1", !this.showDropdown1);
+        this.state.showDropdown1 = !this.showDropdown1
         if (this.showDropdown1) {
           dropdownIcon1.classList.add('dropdown-icon1-open');
           dropdown1.classList.add('dropdown1-open');
@@ -64,7 +64,7 @@ export default apiInitializer("0.8", (api) => {
       const dropdown2 = document.querySelector(".dropdown2");
       const dropdownIcon2 = document.querySelector(".showDropdown2");
       dropdownIcon2.addEventListener('click', () => {
-        this.set("showDropdown2", !this.showDropdown2);
+        this.state.showDropdown2 = !this.showDropdown2
         if (this.showDropdown2) {
           dropdownIcon2.classList.add('dropdown-icon2-open');
           dropdown2.classList.add('dropdown2-open');
