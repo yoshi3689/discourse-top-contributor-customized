@@ -10,5 +10,15 @@ export default Component.extend({
       .then((data) => {
         this.set("topContributors", data.directory_items.slice(0, 5));
       });
+      document.addEventListener("DOMContentLoaded", (e) => {
+        console.log(footerButtons, postContent)
+        const footerButtons = document.querySelector("#topic-footer-buttons");
+        if (footerButtons) {
+          const postContent = document.querySelector(".posts");
+          console.log(footerButtons, postContent)
+          postContent.appendChild(footerButtons);
+        }
+        
+      })
   },
 });
