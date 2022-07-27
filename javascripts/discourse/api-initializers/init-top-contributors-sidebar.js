@@ -3,7 +3,8 @@ import {
 } from "discourse/lib/api";
 
 export default apiInitializer("0.8", (api) => {
-  const connectorNameToDisable =
+  api.onPageChange(() => {
+    const connectorNameToDisable =
     window.location.pathname.includes("/t/") ?
     "after-topic-list-body" :
     "above-timeline";
@@ -12,7 +13,7 @@ export default apiInitializer("0.8", (api) => {
       return false;
     },
   });
-  api.onPageChange(() => {
+  
     const topicList = document.querySelector(".topic-list")
     if (topicList) {
       topicList.classList.add("with-sidebar");
