@@ -28,7 +28,7 @@ export default apiInitializer("0.8", (api) => {
     }
 
     document.addEventListener("DOMContentLoaded", (e) => {
-        
+      console.log(e);
       const footerButtons = document.querySelector("#topic-footer-buttons");
       const postContent = document.querySelector(".posts");
       console.log(footerButtons, postContent)
