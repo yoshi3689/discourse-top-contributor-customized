@@ -27,15 +27,17 @@ export default apiInitializer("0.8", (api) => {
       })
     }
 
-    if (window.location.pathname.includes("/t/")) {
-      document.addEventListener("DOMContentLoaded", (e) => {
+    document.addEventListener("DOMContentLoaded", (e) => {
         
-        const footerButtons = document.querySelector("#topic-footer-buttons");
-        const postContent = document.querySelector(".posts");
-        console.log(footerButtons, postContent)
-        postContent.appendChild(footerButtons);
-      })
-    }
+      const footerButtons = document.querySelector("#topic-footer-buttons");
+      const postContent = document.querySelector(".posts");
+      console.log(footerButtons, postContent)
+      postContent.appendChild(footerButtons);
+    })
+
+    // if (window.location.pathname.includes("/t/")) {
+      
+    // }
   });
 
 })
