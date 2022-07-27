@@ -14,7 +14,7 @@ export default Component.extend({
         console.log(footerButtons)
         const footerButtons = document.querySelector("#topic-footer-buttons");
         if (footerButtons) {
-          const postContent = document.querySelector(".posts");
+          const postContent = document.querySelector(".row");
           console.log(footerButtons, postContent)
           postContent.appendChild(footerButtons);
         }
