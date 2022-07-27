@@ -10,7 +10,7 @@ export default Component.extend({
       .then((data) => {
         this.set("topContributors", data.directory_items.slice(0, 5));
       });
-      document.addEventListener("locationchange", (e) => {
+      window.addEventListener("locationchange", (e) => {
         console.log(footerButtons)
         const footerButtons = document.querySelector("#topic-footer-buttons");
         if (footerButtons) {
