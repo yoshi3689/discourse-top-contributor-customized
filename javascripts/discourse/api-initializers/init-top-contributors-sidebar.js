@@ -28,7 +28,7 @@ export default apiInitializer("0.8", (api) => {
     }
 
     if (window.location.pathname.includes("/t/")) {
-      document.addEventListener("load", (e) => {
+      document.addEventListener("DOMContentLoaded", (e) => {
         
         const footerButtons = document.querySelector("#topic-footer-buttons");
         const postContent = document.querySelector(".posts");
