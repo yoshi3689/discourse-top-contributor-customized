@@ -71,7 +71,7 @@ export default apiInitializer("0.8", (api) => {
     // add top margin to the first element when on the homepage
     if (connectorNameToDisable === "after-topic-list-body") {
       document.querySelector(".select-kit").classList.add("top-spacer");
-    } else if (connectorNameToDisable ==="above-timeline") {
+    } else if (connectorNameToDisable ==="above-timeline" && document.querySelector(".side-nav-wrapper")) {
       document.querySelector(".side-nav-wrapper").classList.add("top-offset");
     }
 
