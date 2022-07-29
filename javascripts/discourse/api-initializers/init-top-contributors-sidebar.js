@@ -68,6 +68,14 @@ export default apiInitializer("0.8", (api) => {
       topicList.classList.add("with-sidebar");
     }
 
+    const firstChildElement = document.querySelector(".side-nav-wrapper").firstChild;
+    if (firstChildElement) {
+      const fceClassList = firstChildElement.classList;
+      if (fceClassList.contains("question-btn")) {
+        fceClassList.add("top-spacer");
+      }
+    }
+
     const realQuestionBtn = document.querySelector('#create-topic');
     const container = document.querySelector('.side-nav-wrapper');
     if (realQuestionBtn && container) {

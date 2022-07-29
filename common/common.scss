@@ -12,9 +12,19 @@
 }
 
 .side-nav-wrapper {
-  margin-top: 3rem;
+  > .top-spacer {
+    margin-top: 3rem;
+  } 
   .question-btn {
     margin-bottom: 3rem;
+  }
+  // disabling the border around the icon
+  .select-kit .select-kit-header {
+    border: none;
+  }
+  // disabling weird space on the left of the icon
+  .select-kit .select-kit-header .caret-icon {
+    padding-left: 0;
   }
 }
 
