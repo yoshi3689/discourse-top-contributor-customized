@@ -95,11 +95,11 @@ export default {
           window.location.pathname.includes("/t/") ?
           "after-topic-list-body" :
           "above-timeline";
-        api.registerConnectorClass(connectorNameToDisable, "top-contributors-sidebar", {
-          shouldRender() {
-            return false;
-          },
-        });
+        // api.registerConnectorClass(connectorNameToDisable, "top-contributors-sidebar", {
+        //   shouldRender() {
+        //     return false;
+        //   },
+        // });
 
         const topicList = document.querySelector(".topic-list")
         if (topicList) {
@@ -148,7 +148,7 @@ export default {
             realQuestionBtn.click();
           })
         }
-        
+
       });
     });
   },
