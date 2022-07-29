@@ -1,5 +1,9 @@
 .with-sidebar {
-  display: block;
+  display: grid;
+}
+
+#main-outlet {
+  width: 100%;
 }
 
 // for the editor
