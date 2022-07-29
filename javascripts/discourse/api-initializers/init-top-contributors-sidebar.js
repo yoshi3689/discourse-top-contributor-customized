@@ -68,12 +68,11 @@ export default apiInitializer("0.8", (api) => {
       topicList.classList.add("with-sidebar");
     }
 
-    const firstChildElement = document.querySelector(".side-nav-wrapper").firstChild;
-    if (firstChildElement) {
-      const fceClassList = firstChildElement.classList;
-      if (fceClassList.contains("question-btn")) {
-        fceClassList.add("top-spacer");
-      }
+    // add top margin to the first element when on the homepage
+    if (connectorNameToDisable === "after-topic-list-body") {
+      document.querySelector(".side-nav-wrapper").firstChild.classList.add("top-spacer");
+    } else {
+      document.querySelector(".side-nav-wrapper").classList.add("top-offset");
     }
 
     const realQuestionBtn = document.querySelector('#create-topic');

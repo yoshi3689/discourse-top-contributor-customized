@@ -28,6 +28,11 @@
   }
 }
 
+// offset the whole side nav to the top by the size of the dots icon
+.top-offset {
+  transform: translateY(-2rem);
+}
+
 .side-nav {
   border: 1px solid #d2d5d9;
   padding: 0;
