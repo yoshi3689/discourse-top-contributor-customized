@@ -2,8 +2,6 @@ import Component from "@ember/component";
 
 export default Component.extend({
   tagName: "",
-  showDropdown1: false,
-  showDropdown2: false,
   init() {
     this._super(...arguments);
     fetch('/categories.json')
@@ -22,10 +20,11 @@ export default Component.extend({
 
     const dropdown1 = document.querySelector(".dropdown1");
     const dropdownIcon1 = document.querySelector(".showDropdown1");
+    let showDropdown1 = false;
     if (dropdown1 && dropdownIcon1) {
       dropdownIcon1.addEventListener('click', () => {
-        this.set("showDropdown1",!this.showDropdown1);
-        if (this.showDropdown1) {
+        showDropdown1 = !showDropdown1;
+        if (showDropdown1) {
           dropdownIcon1.classList.add('dropdown-icon1-open');
           dropdown1.classList.add('dropdown1-open');
         } else {
@@ -37,10 +36,11 @@ export default Component.extend({
 
     const dropdown2 = document.querySelector(".dropdown2");
     const dropdownIcon2 = document.querySelector(".showDropdown2");
+    let showDropdown2 = false;
     if (dropdown2 && dropdownIcon2) {
       dropdownIcon2.addEventListener('click', () => {
-        this.set("showDropdown2" ,!this.showDropdown2);
-        if (this.showDropdown2) {
+        showDropdown2 = !showDropdown2;
+        if (showDropdown2) {
           dropdownIcon2.classList.add('dropdown-icon2-open');
           dropdown2.classList.add('dropdown2-open');
         } else {
