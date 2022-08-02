@@ -43,7 +43,7 @@ export default Component.extend({
   @observes("shouldHideQBtn")
   routeChanged() {
     if (this.shouldHideQBtn) {
-      const wrapper = document.querySelector(".discourse-top-contributors");
+      const wrapper = document.querySelector(".side-nav-wrapper");
       if (wrapper) {
         wrapper.classList.add("onTopicPage");
       } else {
