@@ -40,7 +40,17 @@ export default Component.extend({
       this.shouldDisplay
     );
   },
-
+  @observes("shouldHideQBtn")
+  routeChanged() {
+    if (this.shouldHideQBtn) {
+      const wrapper = document.querySelector(".discourse-top-contributors");
+      if (wrapper) {
+        wrapper.classList.add("onTopicPage");
+      } else {
+        wrapper.classList.remove("onTopicPage");
+      }
+    }
+  },
   didInsertElement() {
     this.displayChanged();
   },
