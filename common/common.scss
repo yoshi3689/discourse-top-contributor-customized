@@ -12,8 +12,9 @@
 }
 
 .side-nav-wrapper {
+  margin: 0;
   .question-btn {
-    margin-bottom: 3rem;
+    margin: 3rem 0;
   }
   // disabling the border around the icon
   .select-kit .select-kit-header {
@@ -227,6 +228,10 @@
   .container.posts {
     grid-template-columns: 3fr 2fr;
     column-gap: 1.5rem;
+  }
+
+  .side-nav-wrapper {
+    margin-top: 3rem;
   }
 }
 
