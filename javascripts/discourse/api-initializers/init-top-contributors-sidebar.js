@@ -29,7 +29,7 @@ export default apiInitializer("0.8", (api) => {
     const dropdown1 = document.querySelector(".dropdown1");
     const dropdownIcon1 = document.querySelector(".showDropdown1");
     let showDropdown1 = false;
-    if (dropdown1) {
+    if (dropdown1 && dropdownIcon1) {
       dropdownIcon1.addEventListener('click', () => {
         showDropdown1 = !showDropdown1;
         if (showDropdown1) {
@@ -45,7 +45,7 @@ export default apiInitializer("0.8", (api) => {
     const dropdown2 = document.querySelector(".dropdown2");
     const dropdownIcon2 = document.querySelector(".showDropdown2");
     let showDropdown2 = false;
-    if (dropdown2) {
+    if (dropdown2 && dropdownIcon2) {
       dropdownIcon2.addEventListener('click', () => {
         showDropdown2 = !showDropdown2;
         if (showDropdown2) {
