@@ -10,15 +10,6 @@ export default Component.extend({
       .then((data) => {
         this.set("topContributors", data.directory_items.slice(0, 5));
       });
-      document.addEventListener("DOMContentLoaded", (e) => {
-        console.log(footerButtons)
-        const footerButtons = document.querySelector("#topic-footer-buttons");
-        if (footerButtons) {
-          const postContent = document.getElementsByClassName("row")[1];
-          console.log(footerButtons, postContent)
-          postContent.appendChild(footerButtons);
-        }
-        
-      })
   },
+  shouldQuestionBtnAppear: !window.location.pathname.includes("/t/"),
 });
