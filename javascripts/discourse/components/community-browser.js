@@ -14,7 +14,6 @@ export default Component.extend({
       };
     }))
     .then(data => {
-      console.log(data);
       this.set("categories", data)
     });
 

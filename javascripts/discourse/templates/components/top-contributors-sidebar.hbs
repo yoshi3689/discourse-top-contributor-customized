@@ -1,10 +1,10 @@
 <div class="side-nav-wrapper">
-  {{#if shouldQuestionBtnAppear}}
+  {{#if isOnSingleTopic}}
+    {{side-dropdown}}    
+  {{else}}
     <button class="question-btn">
       <span class="btn-text">Ask a Question</span>
     </button>
-  {{else}}
-    {{side-dropdown}}
   {{/if}}
   {{top-contributors}}
   {{important-links}}
