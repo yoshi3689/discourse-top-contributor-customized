@@ -17,9 +17,12 @@
     margin: 3rem 0;
   }
   // disabling the border around the icon
+  .select-kit {
+    margin-left: auto;
+    font-size: 2rem;
+  }
   .select-kit .select-kit-header {
     border: none;
-    margin-top: 3rem;
   }
   // disabling weird space on the left of the icon
   .select-kit .select-kit-header .caret-icon {
@@ -230,7 +233,7 @@
     column-gap: 1.5rem;
   }
 
-  .side-nav-wrapper {
+  .discourse-top-contributors {
     margin-top: 3rem;
   }
 }
