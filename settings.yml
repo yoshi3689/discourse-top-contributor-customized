@@ -1,2 +1,11 @@
 enable_top_contributors:
   default: true
+show_on:
+  default: all
+  type: enum
+  choices:
+    - top_menu
+    - homepage
+    - all
+  description: top_menu refers to the <a href="/admin/site_settings/category/all_results?filter=top_menu">top menu site setting</a>
+
