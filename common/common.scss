@@ -191,6 +191,11 @@
   display: block;
 }
 
+.discourse-community-browser .fa.d-icon.d-icon-lock.svg-icon.svg-string {
+  margin-right: 0;
+  color: inherit;
+}
+
 @media screen and (min-width: 1000px) {
   #list-area > .contents > .topic-list {
     display: grid;
