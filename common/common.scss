@@ -106,6 +106,12 @@
   :not(:last-child):first-child {
     margin-left: 0.5rem;
     font-size: 14px;
+    > span > span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 90px;
+    }
   }
   &:nth-child(1)::before {
     content: "#1 ";
