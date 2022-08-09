@@ -203,10 +203,12 @@
 @media screen and (min-width: 1000px) {
   .categories-grid {
      .side-nav-wrapper {
-      grid-area: sidebar;
       margin-top: 0;
       .side-nav {
         overflow: hidden;
+      }
+      .question-btn {
+        display: none;
       }
     }
   }
