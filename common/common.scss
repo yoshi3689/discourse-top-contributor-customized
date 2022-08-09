@@ -218,46 +218,44 @@
     margin-top: 2rem;
   }
 
-  // .onTopicPage {
-  //   transform: translateY(-120px);
-  // }
+  .top-contributors-sidebar {
+    .side-nav-wrapper {
+     margin-top: 0;
+     .side-nav {
+       overflow: hidden;
+     }
+     .question-btn {
+       display: none;
+     }
+   }
+ }
+ 
+ #list-area > .contents > .topic-list {
+   display: grid;
+   grid-column-gap: 4%;
+   align-items: start;
+   grid-template-rows: auto auto auto;
+   grid-template-columns: 65% 31%;
+   grid-template-areas: "body sidebar";
+   .question-btn {
+     display: none;
+   }
+   > .side-nav-wrapper {
+     grid-area: sidebar;
+     margin-top: 0;
+     .side-nav {
+       overflow: hidden;
+     }
+   }
+   tbody {
+     grid-area: body;
+     display: table;
+   }
+ }
 }
 
 @media screen and (min-width: 1000px) {
-  .top-contributors-sidebar {
-     .side-nav-wrapper {
-      margin-top: 0;
-      .side-nav {
-        overflow: hidden;
-      }
-      .question-btn {
-        display: none;
-      }
-    }
-  }
   
-  #list-area > .contents > .topic-list {
-    display: grid;
-    grid-column-gap: 4%;
-    align-items: start;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 65% 31%;
-    grid-template-areas: "body sidebar";
-    .question-btn {
-      display: none;
-    }
-    > .side-nav-wrapper {
-      grid-area: sidebar;
-      margin-top: 0;
-      .side-nav {
-        overflow: hidden;
-      }
-    }
-    tbody {
-      grid-area: body;
-      display: table;
-    }
-  }
 }
 
 // what is this for?
