@@ -22,8 +22,12 @@ export default apiInitializer("0.8", (api) => {
     // add top margin to the first element when on the homepage
     if (connectorNameToDisable === "after-topic-list-body") {
       document.querySelector(".select-kit").classList.add("top-spacer");
+      // offset towards the top when on some page??
     } else if (connectorNameToDisable === "above-timeline" && document.querySelector(".side-nav-wrapper")) {
-      document.querySelector(".side-nav-wrapper").classList.add("top-offset");
+      document.querySelector(".side-nav-wrapper").classList.add("top-offset-small");
+      // offset towards the top on an individual topic page
+    } else if (connectorNameToDisable === "above-timeline" && document.querySelector(".post-stream")) {
+      document.querySelector(".side-nav-wrapper").classList.add("top-offset-large");
     }
 
     const dropdown1 = document.querySelector(".dropdown1");
