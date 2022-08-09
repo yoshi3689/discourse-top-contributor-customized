@@ -104,7 +104,7 @@
 .top-contributors-container-contributor {
   :not(:last-child):first-child {
     margin-left: 0.5rem;
-    padding: 0.5em 1rem 0.25em;
+    padding-left: 1rem;
   }
   &:nth-child(1)::before {
     content: "#1 ";
