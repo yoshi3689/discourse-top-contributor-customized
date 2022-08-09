@@ -28,7 +28,7 @@ export default apiInitializer("0.8", (api) => {
       document.querySelector(".side-nav-wrapper").classList.add("top-offset-small");
       // offset towards the top on an individual topic page
     } else if (connectorNameToDisable === "after-topic-list-body" && document.querySelector(".post-stream")) {
-      
+      console.log("hi this condition is working")
       document.querySelector(".side-nav-wrapper").classList.add("top-offset-large");
     }
 
