@@ -63,6 +63,7 @@ export default apiInitializer("0.8", (api) => {
     if (realQuestionBtn && container) {
       const visibleQuestionBtn = container.querySelector('.question-btn');
       visibleQuestionBtn.addEventListener('click', e => {
+        // console.log(realQuestionBtn, container, visibleQuestionBtn);
         realQuestionBtn.click();
       })
     }
