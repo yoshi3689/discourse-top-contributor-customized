@@ -26,7 +26,7 @@ export default apiInitializer("0.8", (api) => {
     } else if (connectorNameToDisable === "above-timeline" && document.querySelector(".side-nav-wrapper")) {
       document.querySelector(".side-nav-wrapper").classList.add("top-offset-small");
       // offset towards the top on an individual topic page
-    } else if (connectorNameToDisable === "above-timeline" && document.querySelector(".post-stream")) {
+    } else if (connectorNameToDisable === "after-topic-list-body" && document.querySelector(".post-stream")) {
       document.querySelector(".side-nav-wrapper").classList.add("top-offset-large");
     }
 
