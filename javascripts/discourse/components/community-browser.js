@@ -4,6 +4,6 @@ export default Component.extend({
   tagName: "",
   init() {
     this._super(...arguments);
-    this.set("categories", this.site.categories)
+    this.set("categories", this.site.categories.filter(category => !category.isMuted))
   },
 });
