@@ -20,7 +20,7 @@ export default apiInitializer("0.8", (api) => {
     }
 
     // add top margin to the first element when on the homepage
-    console.log(connectorNameToDisable === "after-topic-list-body" && document.querySelector(".post-stream"));
+    console.log(connectorNameToDisable === "after-topic-list-body", document.querySelector(".post-stream"));
     if (connectorNameToDisable === "after-topic-list-body") {
       document.querySelector(".select-kit").classList.add("top-spacer");
       // offset towards the top when on some page??
