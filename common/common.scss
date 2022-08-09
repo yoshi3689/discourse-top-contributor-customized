@@ -201,7 +201,16 @@
 }
 
 @media screen and (min-width: 1000px) {
-  #list-area > .contents > .topic-list, .categories-grid {
+  .categories-grid {
+     .side-nav-wrapper {
+      grid-area: sidebar;
+      margin-top: 0;
+      .side-nav {
+        overflow: hidden;
+      }
+    }
+  }
+  #list-area > .contents > .topic-list {
     display: grid;
     grid-column-gap: 4%;
     align-items: start;
