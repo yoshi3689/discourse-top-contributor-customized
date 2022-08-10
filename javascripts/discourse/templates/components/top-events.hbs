@@ -1,0 +1,21 @@
+<div class="discourse-top-events side-nav">
+  <h1 class="side-nav-heading">
+    {{d-icon "calendar-alt"}}
+    Events
+  </h1>
+
+  <ul class="side-nav-container-body links-wrapper">
+    {{#each events as |event|}}
+    <li class="event-item">
+      <div class="event-date">
+        <span>{{event.day}}</span>
+        <small>{{event.month}}</small>
+      </div>
+      <div class="event-details">
+        <a href={{event.url}}>{{event.title}}</a>
+        <span>{{d-icon "calendar-alt"}} {{event.month}} {{event.day}}, {{event.year}}</span>
+      </div>
+    </li>
+    {{/each}}
+  </ul>
+</div>
