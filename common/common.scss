@@ -213,6 +213,14 @@
 }
 
 @media screen and (min-width: 925px) {
+  .column.categories ~ .categories-grid {
+    display: grid;
+    column-gap: 4%;
+    grid-template-columns: 65% 31%;
+    .extra-categories-column-outlet .top-contributors-sidebar .ember-view {
+      grid-area: unset;
+    }
+  }
   .top-contributors-sidebar {
     grid-area: timeline;
   }
