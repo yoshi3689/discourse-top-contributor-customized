@@ -212,6 +212,61 @@
   display:none
 }
 
+.discourse-top-events {
+  li.event-item {
+    display: flex;
+    .event-date {
+      width: 50px;
+      height: 50px;
+      background-color: #d2d5d9;
+      border-radius: 4px;
+      padding: 4px;
+      margin-right: 10px;
+      text-align: center;
+      line-height: 0;
+      min-width: 50px;
+      span {
+        display: block;
+        font-size: 30px;
+        line-height: 1;
+        border-bottom: 1px solid #D2D5D9;
+      padding-bottom: 6px;
+      font-weight: bold;
+      padding-top: 2px;
+      color: var(--tertiary-hover);
+      }
+      small {
+        color: #6B7177;
+        font-size: 11px;
+        line-height: 14px;
+        text-transform: uppercase;
+      }
+    }
+    .event-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      > a {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 55%;
+        color: inherit;
+      }
+      > span {
+        font-size: 14px;
+        color: #6B7177;
+      }
+      .d-icon-calendar-alt {
+        margin-right: 2px;
+        color: var(--tertiary-hover);
+      }
+      
+    }
+  } 
+}
+
 @media screen and (min-width: 1000px) {
   .column.categories ~ .categories-grid {
     display: grid;
@@ -231,63 +286,6 @@
 
   .discourse-top-contributors, .discourse-top-events {
     margin-top: 3rem;
-  }
-
-  .discourse-top-events {
-    li.event-item {
-      display: flex;
-      .event-date {
-        width: 50px;
-        height: 50px;
-        background-color: #d2d5d9;
-        border-radius: 4px;
-        padding: 4px;
-        margin-right: 10px;
-        text-align: center;
-        line-height: 0;
-        min-width: 50px;
-        span {
-          display: block;
-          font-size: 30px;
-          line-height: 1;
-          border-bottom: 1px solid #D2D5D9;
-        padding-bottom: 6px;
-        font-weight: bold;
-        padding-top: 2px;
-        color: var(--tertiary-hover);
-        }
-        small {
-          color: #6B7177;
-          font-size: 11px;
-          line-height: 14px;
-          text-transform: uppercase;
-        }
-      }
-      .event-details {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        > a {
-          display: block;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          width: 55%;
-          color: inherit;
-        }
-        > span {
-          font-size: 14px;
-          color: #6B7177;
-        }
-        .d-icon-calendar-alt {
-          margin-right: 2px;
-          color: var(--tertiary-hover);
-        }
-        
-      }
-    }
-    
-    
   }
 
   .top-contributors-sidebar {
