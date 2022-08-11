@@ -214,6 +214,7 @@
 
 .discourse-top-events {
   margin-top: 3rem;
+  overflow: hidden;
   li.event-item {
     display: flex;
     .event-date {
