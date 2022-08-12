@@ -1,0 +1,12 @@
+// fix the overflow of the whole side bar on mobile
+.container.posts {
+  grid-template-columns: 100% !important;
+  .side-nav-wrapper.top-offset-large {
+    transform: translateY(0px);
+    margin-top: 2rem;
+    .top-contributors-container.side-nav-container-body {
+      box-sizing: border-box;
+    }
+  }
+}
+
