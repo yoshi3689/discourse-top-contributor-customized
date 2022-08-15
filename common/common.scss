@@ -32,15 +32,6 @@
   }
 }
 
-// offset the whole side nav to the top by the size of the dots icon
-.top-offset-small {
-  transform: translateY(-2rem);
-}
-
-.top-offset-large {
-  transform: translateY(-2rem);
-}
-
 .side-nav {
   border: 1px solid #d2d5d9;
   padding: 0;
@@ -270,6 +261,13 @@
 }
 
 @media screen and (min-width: 1000px) {
+  .top-offset-large {
+    transform: translateY(-2rem);
+  }
+  // offset the whole side nav to the top by the size of the dots icon
+.top-offset-small {
+  transform: translateY(-2rem);
+}
   .column.categories ~ .categories-grid {
     display: grid;
     column-gap: 4%;
