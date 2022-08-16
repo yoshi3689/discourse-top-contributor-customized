@@ -67,6 +67,9 @@ export default apiInitializer("0.8", (api) => {
     const container = document.querySelector('.side-nav-wrapper');
     if (realQuestionBtn && container) {
       const visibleQuestionBtn = container.querySelector('.question-btn');
+      if (realQuestionBtn.disabled) {
+        visibleQuestionBtn.disabled = true; 
+       }
       visibleQuestionBtn.addEventListener('click', e => {
         // console.log(realQuestionBtn, container, visibleQuestionBtn);
         realQuestionBtn.click();
