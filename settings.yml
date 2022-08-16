@@ -9,3 +9,34 @@ show_on:
     - all
   description: top_menu refers to the <a href="/admin/site_settings/category/all_results?filter=top_menu">top menu site setting</a>
 
+important_link_all_unanswered:
+  default: "https://discourse.kqhandmade.com/latest?max_posts=1"
+  type: list
+  description: URL for one of the important links
+
+# important_link_community_blog:
+#   default: "/#"
+#   type: list
+#   description: URL for one of the important links
+
+# important_link_community_guidelines:
+#   default: "/#"
+#   type: list
+#   description: URL for one of the important links
+
+important_link_code_of_conduct:
+  default: "https://discourse.kqhandmade.com/faq"
+  type: list
+  description: URL for one of the important links
+
+important_link_terms_of_service:
+  default: "https://discourse.kqhandmade.com/tos"
+  type: list
+  description: URL for one of the important links
+
+important_link_privacy_policy:
+  default: "https://discourse.kqhandmade.com/privacy"
+  type: list
+  description: URL for one of the important links
+
+
