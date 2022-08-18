@@ -49,7 +49,7 @@
           <ul class="dropdown2">
             {{#each categories as |category|}}
               <li><span>
-                {{#if category.childCategories}}
+                {{#if category.subcategories}}
                   <span title="Category" aria-label="Category">
                     <svg class="fa d-icon d-icon-caret-right svg-icon svg-node showDropdown3 dropdown-icon3-open" xmlns="http://www.w3.org/2000/svg"><use href="#caret-right"></use></svg>
                     {{d-icon "folder-open"}}
@@ -64,7 +64,6 @@
                 {{/if}}
                   <a data-category-id={{category.id}} href={{category.url}}>{{html-safe category.name}}</a>
                   {{#if category.subcategories}}
-                    {{d-icon "folder-open"}}
                     <ul class="dropdown3">
                       {{#each category.subcategories as |subcategory|}}
                         <li><span>{{d-icon "comment"}}</span>
