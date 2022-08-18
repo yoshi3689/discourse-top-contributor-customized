@@ -174,22 +174,25 @@
 }
 
 .dropdown1,
-.dropdown2 {
+.dropdown2,
+.dropdown3
+ {
   display: none;
-  // can change depending on the size of the icon?
-  margin-left: 1rem;
+  margin-left: 1em;
 }
 
 .dropdown2 {
-  margin-left: 2rem;
+  margin-left: 2em;
 }
 
+.dropdown-icon1-open,
 .dropdown-icon2-open,
-.dropdown-icon1-open {
+.dropdown-icon3-open {
   transform: rotate(90deg);
 }
 .dropdown1-open,
-.dropdown2-open {
+.dropdown2-open,
+.dropdown3-open {
   display: block;
 }
 

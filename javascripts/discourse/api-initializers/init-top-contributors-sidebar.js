@@ -63,6 +63,22 @@ export default apiInitializer("0.8", (api) => {
       });
     }
 
+    const dropdown3 = document.querySelector(".dropdown3");
+    const dropdownIcon3 = document.querySelector(".showDropdown3");
+    let showDropdown3 = false;
+    if (dropdown3 && dropdownIcon3) {
+      dropdownIcon3.addEventListener('click', () => {
+        showDropdown3 = !showDropdown3;
+        if (showDropdown3) {
+          dropdownIcon3.classList.add('dropdown-icon3-open');
+          dropdown3.classList.add('dropdown3-open');
+        } else {
+          dropdownIcon3.classList.remove('dropdown-icon3-open');
+          dropdown3.classList.remove('dropdown3-open');
+        }
+      });
+    }
+
     const realQuestionBtn = document.querySelector('#create-topic');
     const container = document.querySelector('.side-nav-wrapper');
     if (realQuestionBtn && container) {
