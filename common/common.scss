@@ -240,17 +240,22 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: start !important;
+      position: relative;
+      width: 100%;
       > a {
         display: block;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         color: inherit;
+        position: absolute;
+        bottom: 0;
       }
       > span {
         font-size: 14px;
         color: #6b7177;
       }
+    
       .d-icon-calendar-alt {
         margin-right: 2px;
         color: var(--tertiary-hover);
