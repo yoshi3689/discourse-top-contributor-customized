@@ -48,11 +48,30 @@
           >G2G Discussion</a>
           <ul class="dropdown2">
             {{#each categories as |category|}}
-              <li><span>{{d-icon "comment"}}</span>
+              <li><span>
+                {{#if category.childCategories}}
+                  {{d-icon "folder-open"}}
+                {{#else}}
+                  {{d-icon "comment"}}
+                {{/if}}
+              </span>
                 {{#if category.read_restricted}}
                   {{d-icon "lock"}}
+                  <a data-category-id={{category.id}} href={{category.url}}>{{html-safe category.name}}</a>
+                {{#else}}
+                  {{d-icon "folder-open"}}
+                  <ul class="dropdown3">
+                    {{#each subcategories as |subcategory|}}
+                      <li><span>{{d-icon "comment"}}</span>
+                        {{#if subcategory.read_restricted}}
+                          {{d-icon "lock"}}
+                          <a data-category-id={{subcategory.id}} href={{subcategory.url}}>{{html-safe subcategory.name}}</a>
+                        {{/if}}
+                      </li>
+                    {{/each}}
+                  </ul>
                 {{/if}}
-                <a data-category-id={{category.id}} href={{category.url}}>{{html-safe category.name}}</a>
+                
               </li>
             {{/each}}
           </ul>
