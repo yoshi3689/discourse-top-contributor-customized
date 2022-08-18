@@ -1,0 +1,102 @@
+<div class="discourse-community-browser side-nav">
+  <h1 class="side-nav-heading">
+    <svg
+      class="fa d-icon d-icon-bell svg-icon svg-string"
+      xmlns="http://www.w3.org/2000/svg"
+    ><use href="#globe"></use></svg>
+    Community Browser</h1>
+  <ul class="side-nav-container-body nested-dropdowns">
+
+    <li class="lia-tree-node-7 lia-list-tree-selected">
+      <span title="Category" aria-label="Category">
+        <svg
+          class="fa d-icon d-icon-caret-right svg-icon svg-node showDropdown1"
+          xmlns="http://www.w3.org/2000/svg"
+        ><use href="#caret-right"></use></svg>
+        <svg
+          class="fa d-icon d-icon-bell svg-icon svg-string"
+          xmlns="http://www.w3.org/2000/svg"
+        ><use href="#folder-open"></use></svg>
+      </span>
+      <a href="/">
+        G2G Community
+      </a>
+      <ul class="dropdown1">
+        <li
+          class="lia-tree-node-136 lia-list-tree-toggle-node lia-list-tree-closed"
+        >
+          <span
+            class="lia-img-icon-category lia-fa-icon lia-fa-category lia-fa lia-node-icon"
+            title="Category"
+            aria-label="Category"
+            role="img"
+            id="imagedisplay_5"
+          >
+            <svg
+              class="fa d-icon d-icon-caret-right svg-icon svg-node showDropdown2"
+              xmlns="http://www.w3.org/2000/svg"
+            ><use href="#caret-right"></use></svg>
+            <svg
+              class="fa d-icon d-icon-bell svg-icon svg-string"
+              xmlns="http://www.w3.org/2000/svg"
+            ><use href="#folder-open"></use></svg>
+          </span>
+          <a
+            class="lia-link-navigation lia-js-data-coreNodeDisplayId-shopify-discussion lia-js-data-coreNodeTypeAndId-category:shopify-discussion lia-js-data-coreNodeId-136 lia-component-forums-widget-community-node-tree-item"
+            id="link_21"
+            href="/categories"
+          >G2G Discussion</a>
+          <ul class="dropdown2">
+            {{#each categories as |category|}}
+              <li><span>
+                {{#if category.childCategories}}
+                  {{d-icon "folder-open"}}
+                {{else}}
+                  {{d-icon "comment"}}
+                {{/if}}
+              </span>
+                {{#if category.read_restricted}}
+                  {{d-icon "lock"}}
+                  <a data-category-id={{category.id}} href={{category.url}}>{{html-safe category.name}}</a>
+                {{else}}
+                  {{d-icon "folder-open"}}
+                  <ul class="dropdown3">
+                    {{#each subcategories as |subcategory|}}
+                      <li><span>{{d-icon "comment"}}</span>
+                        {{#if subcategory.read_restricted}}
+                          {{d-icon "lock"}}
+                        {{/if}}
+                        <a data-category-id={{subcategory.id}} href={{subcategory.url}}>{{html-safe subcategory.name}}</a>
+                      </li>
+                    {{/each}}
+                  </ul>
+                {{/if}}
+                
+              </li>
+            {{/each}}
+          </ul>
+        </li>
+        <li class="menu-item-last">
+          <span
+            class="lia-img-icon-occasion-board lia-fa-icon lia-fa-occasion lia-fa-board lia-fa lia-node-icon"
+            title="Events"
+            alt="Events"
+            aria-label="Events"
+            role="img"
+            id="imagedisplay_37"
+          >
+            <svg
+              class="fa d-icon d-icon-calendar-alt svg-icon svg-string"
+              xmlns="http://www.w3.org/2000/svg"
+            ><use href="#calendar-alt"></use></svg>
+          </span>
+          <a
+            class="lia-link-navigation lia-js-data-coreNodeDisplayId-events_en lia-js-data-coreNodeTypeAndId-occasion-board:events_en lia-js-data-coreNodeId-615 lia-component-forums-widget-community-node-tree-item"
+            id="link_57"
+            href="https://goodtogrowproducts.com/1dayworkshop/"
+          >Events</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
