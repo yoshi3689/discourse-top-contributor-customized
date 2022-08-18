@@ -9,8 +9,8 @@ export default Component.extend({
       let parentCategory = c.parentCategory ? `${c.parentCategory.slug}/` : "";
       return {...c, category_url: `/c/${parentCategory}${c.slug}/${c.id}`};
     }))
-    this.set("subcategories", this.site.categories.filter(category => category.parentCategory).map(c=>{
-      return {...c, category_url: `/c/${c.parentCategory.slug}${c.slug}/${c.id}`};
-    }))
+    // this.set("subcategories", this.site.categories.filter(category => category.parentCategory).map(c=>{
+    //   return {...c, category_url: `/c/${c.parentCategory.slug}${c.slug}/${c.id}`};
+    // }))
   },
 });
