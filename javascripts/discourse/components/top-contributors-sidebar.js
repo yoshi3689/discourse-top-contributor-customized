@@ -24,13 +24,18 @@ export default Component.extend({
       );
     }
   },
+
+  // check if the user is on a single topic page based on a route name provided by Discourse
   @discourseComputed("router.currentRouteName")
   isOnSingleTopic(currentRouteName) {
     return currentRouteName.includes("topic");
   },
 
   shouldDisplay: bool("displayForRoute"),
+
+  // hide the question button on a single topic page
   shouldHideQBtn: bool("isOnSingleTopic"),
+
   // Setting a class on <html> from a component is not great
   // but we need it for backwards compatibility
   @observes("shouldDisplay")

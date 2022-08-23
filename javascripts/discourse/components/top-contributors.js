@@ -5,6 +5,7 @@ export default Component.extend({
 
   init() {
     this._super(...arguments);
+    // fetch top contributors using discourse API
     fetch(`/directory_items.json?period=yearly&order=likes_received`)
       .then((response) => response.json())
       .then((data) => {

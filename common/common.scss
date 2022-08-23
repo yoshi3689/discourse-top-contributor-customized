@@ -32,6 +32,7 @@
   }
 }
 
+// each gadget in the side bar
 .side-nav {
   border: 1px solid #d2d5d9;
   padding: 0;
@@ -104,6 +105,7 @@
       max-width: 90px;
     }
   }
+  // adding the ranks
   &:nth-child(1)::before {
     content: "#1 ";
   }
@@ -206,7 +208,7 @@
   color: inherit;
 }
 
-// topic page
+// disable the navigation for an individual topic page
 .container.posts .topic-navigation {
   display: none;
 }
@@ -274,13 +276,11 @@
 }
 
 @media screen and (min-width: 1000px) {
-  .top-offset-large {
+  // offset the side nav bar to align with the topic list's top end
+  .top-offset {
     transform: translateY(-2rem);
   }
-  // offset the whole side nav to the top by the size of the dots icon
-  .top-offset-small {
-    transform: translateY(-2rem);
-  }
+
   .column.categories ~ .categories-grid {
     display: grid;
     column-gap: 4%;
@@ -313,6 +313,7 @@
     }
   }
 
+  // creates the layout for the side bar
   #list-area > .contents > .topic-list {
     display: grid;
     grid-column-gap: 4%;
@@ -336,17 +337,3 @@
     }
   }
 }
-
-@media screen and (min-width: 1000px) {
-}
-
-// what is this for?
-// .custom-sidebar {
-//   #list-area .show-more.has-topics .alert {
-//     box-sizing: border-box;
-//     width: 75%;
-//     @media screen and (max-width: 900px) {
-//       width: 73%;
-//     }
-//   }
-// }
