@@ -8,7 +8,7 @@ export default Component.extend({
     // using Discourse API to fetch events(topics) in the event category
     fetch('/c/static/14.json')
       .then((response) => response.json())
-      // filter out objects without an event object
+      // filter out objects without an event object or date expired
       .then(data => data.topic_list.topics.filter(topic => topic.event && new Date(topic.event.start) > new Date()))
       // create date strings to show on the page
       .then(events => events.map((event) => {
