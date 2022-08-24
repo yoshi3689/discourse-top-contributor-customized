@@ -9,7 +9,7 @@ export default Component.extend({
     fetch('/c/static/14.json')
       .then((response) => response.json())
       // filter out objects without an event object
-      .then(data => data.topic_list.topics.filter(topic => topic.event))
+      .then(data => data.topic_list.topics.filter(topic => topic.event && new Date(topic.event.start) > new Date()))
       // create date strings to show on the page
       .then(events => events.map((event) => {
           let eventDate = new Date(event.event.start);
