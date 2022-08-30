@@ -2,10 +2,3 @@ en:
   top_contributors:
     title: "Top Contributors"
     view_all: "View All"
-  important_links:
-    link_all_unanswered: "https://discourse.kqhandmade.com/latest?max_posts=1"
-    community_blog: ""
-    community_guidelines: ""
-    code_of_conduct: "https://discourse.kqhandmade.com/faq"
-    terms_of_service: "https://discourse.kqhandmade.com/tos"
-    privacy_policy: "https://discourse.kqhandmade.com/privacy"
