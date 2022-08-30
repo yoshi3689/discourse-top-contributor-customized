@@ -4,7 +4,7 @@ export default Component.extend({
   tagName: "",
   init() {
     this._super(...arguments);
-    let importantLinks = settings.importantLinks.split("|")
+    let importantLinks = settings.importantLinks
     console.log(importantLinks)
     // .filter(linkItem => !linkItem.includes("#"))
     // .map(linkItem => {
