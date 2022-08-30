@@ -7,4 +7,8 @@ show_on:
     - top_menu
     - homepage
     - all
-  description: top_menu refers to the <a href="/admin/site_settings/category/all_results?filter=top_menu">top menu site setting</a>
+  description: refers to the <a href="/admin/site_settings/category/all_results?filter=top_menu">top menu site setting</a>
+event_route:
+  default: c/events/6
+  type: text
+  description: specifies an event route to display upcoming events
