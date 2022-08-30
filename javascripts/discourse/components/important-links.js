@@ -4,9 +4,8 @@ export default Component.extend({
   tagName: "",
   init() {
     this._super(...arguments);
-    let importantLinks = settings.importantLinks
+    let importantLinks = settings.importantLinks.split("|")
     console.log(importantLinks)
-    // .split("|")
     // .filter(linkItem => !linkItem.includes("#"))
     // .map(linkItem => {
     //   let linkSplit = linkItem.split(",").trim();
