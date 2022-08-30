@@ -5,12 +5,11 @@ export default Component.extend({
   init() {
     this._super(...arguments);
     let importantLinks = settings.important_links
-    console.log(importantLinks)
-    // .filter(linkItem => !linkItem.includes("#"))
-    // .map(linkItem => {
-    //   let linkSplit = linkItem.split(",").trim();
-    //   return {name: linkSplit[0], url: linkSplit[1]}
-    // });
-    // this.set("importantLinks", importantLinks);
+    .filter(linkItem => !linkItem.includes("#"))
+    .map(linkItem => {
+      let linkSplit = linkItem.split(",").trim();
+      return {name: linkSplit[0], url: linkSplit[1]}
+    });
+    this.set("importantLinks", importantLinks);
   },
 });
