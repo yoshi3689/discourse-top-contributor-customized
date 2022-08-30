@@ -5,6 +5,7 @@ export default Component.extend({
 
   init() {
     this._super(...arguments);
+    console.log(important_links, this.important_links)
     // using Discourse API to fetch events(topics) in the event category
     fetch(`c/events/6.json`)
       .then((response) => response.json())
