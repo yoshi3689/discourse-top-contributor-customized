@@ -2,24 +2,10 @@
   <h1 class="side-nav-heading">{{d-icon "link"}} Important Links</h1>
 
   <ul class="side-nav-container-body links-wrapper">
-    <li>
-      <a href={{html-safe (theme-i18n "important_links.link_all_unanswered")}}>All Unanswered Topics</a>
-    </li>
-    <li>
-      <a href="#">Community Blog</a>
-    </li>
-    <li>
-      <a href="#">Community Guidelines</a>
-    </li>
-    <li>
-      <a href={{html-safe (theme-i18n "important_links.code_of_conduct")}}>Code of Conduct</a>
-    </li>
-    <li>
-      <a href={{html-safe (theme-i18n "important_links.terms_of_service")}}>Terms of Service</a>
-    </li>
-    <li>
-      <a href={{html-safe (theme-i18n "important_links.privacy_policy")}}>Privacy Policy</a>
-    </li>
-    
+    {{#each importantLinks}}
+      <li>
+        <a href={{importantLinks.url}}>{{importantLinks.name}}</a>
+      </li>
+    {{/each}}
   </ul>
 </div>
