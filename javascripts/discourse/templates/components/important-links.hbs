@@ -2,11 +2,9 @@
   <h1 class="side-nav-heading">{{d-icon "link"}} Important Links</h1>
 
   <ul class="side-nav-container-body links-wrapper">
-    {{#if important_links.link_all_unanswered }}
     <li>
       <a href={{html-safe (theme-i18n "important_links.link_all_unanswered")}}>All Unanswered Topics</a>
     </li>
-    {{/if}}
     {{#if important_links.community_blog}}
     <li>
       <a href="#">Community Blog</a>
