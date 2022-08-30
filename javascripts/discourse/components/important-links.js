@@ -5,6 +5,7 @@ export default Component.extend({
   init() {
     this._super(...arguments);
     let importantLinks = settings.important_links
+    .split(",")
     .filter(linkItem => !linkItem.includes("#"))
     .map(linkItem => {
       let linkSplit = linkItem.split(",").trim();
