@@ -9,7 +9,7 @@ export default Component.extend({
     .filter(linkItem => !linkItem.includes("#"))
     .map(linkItem => {
       console.log(linkItem)
-      let linkSplit = linkItem.split(",").trim();
+      let linkSplit = linkItem.split(",");
       return {name: linkSplit[0], url: linkSplit[1]}
     });
     this.set("importantLinks", importantLinks);
