@@ -6,7 +6,7 @@ export default Component.extend({
   init() {
     this._super(...arguments);
     // using Discourse API to fetch events(topics) in the event category
-    fetch(`${settings.event_route[0]}.json`)
+    fetch(`c/events/6.json`)
       .then((response) => response.json())
       // filter out objects without an event object or date expired
       .then(data => data.topic_list.topics.filter(topic => topic.event && new Date(topic.event.start) > new Date()))
