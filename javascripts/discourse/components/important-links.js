@@ -7,8 +7,8 @@ export default Component.extend({
     let importantLinks = settings.important_links
     .split("|")
     .filter(linkItem => !linkItem.includes("#"))
-    .forEach(linkItem => {console.log(linkItem)})
     .map(linkItem => {
+      console.log(linkItem)
       let linkSplit = linkItem.split(",").trim();
       return {name: linkSplit[0], url: linkSplit[1]}
     });
