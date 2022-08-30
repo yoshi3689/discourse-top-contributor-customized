@@ -8,7 +8,6 @@ export default Component.extend({
     .split("|")
     .filter(linkItem => !linkItem.includes("#"))
     .map(linkItem => {
-      console.log(linkItem)
       let linkSplit = linkItem.split(", ");
       return {name: linkSplit[0], url: linkSplit[1]}
     });
