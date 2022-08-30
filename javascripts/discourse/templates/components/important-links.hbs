@@ -1,9 +1,9 @@
 <div class="discourse-important-links side-nav">
   <h1 class="side-nav-heading">{{d-icon "link"}} Important Links</h1>
   <ul class="side-nav-container-body links-wrapper">
-    {{#each importantLinks}}
+    {{#each importantLinks as |importantLink|}}
       <li>
-        <a href={{importantLinks.url}}>{{importantLinks.name}}</a>
+        <a href={{html-safe importantLink.url}}>{{html-safe importantLink.name}}</a>
       </li>
     {{/each}}
   </ul>
