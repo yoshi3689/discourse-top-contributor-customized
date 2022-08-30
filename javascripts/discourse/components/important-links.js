@@ -7,10 +7,11 @@ export default Component.extend({
     let importantLinks = settings.important_links
     .split(",")
     .filter(linkItem => !linkItem.includes("#"))
-    .map(linkItem => {
-      let linkSplit = linkItem.split(",").trim();
-      return {name: linkSplit[0], url: linkSplit[1]}
-    });
+    .forEach(linkItem => {console.log(linkItem)})
+    // .map(linkItem => {
+    //   let linkSplit = linkItem.split(",").trim();
+    //   return {name: linkSplit[0], url: linkSplit[1]}
+    // });
     this.set("importantLinks", importantLinks);
   },
 });
