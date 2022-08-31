@@ -15,4 +15,4 @@ important_links:
 event_route: 
   default: "/c/events/6"
   type: list
-  description: the fail-safe route name for the events category.
+  description: the fail-safe route name for the events category. Make sure you modify the first text box instead of adding new ones. 
