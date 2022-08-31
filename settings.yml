@@ -12,3 +12,7 @@ important_links:
   default: "All Unanswered Topics, https://discourse.kqhandmade.com/latest?max_posts=1 |Community Blog, # |Community Guidelines, # |Code of Conduct, https://discourse.kqhandmade.com/faq |Terms of Service, https://discourse.kqhandmade.com/tos |Privacy Policy, https://discourse.kqhandmade.com/privacy"
   type: list
   description: link names and urls for the important links
+event_route: 
+  default: "/c/events/6"
+  type: list
+  description: the fail-safe route name for the events category.
