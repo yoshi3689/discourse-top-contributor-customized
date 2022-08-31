@@ -7,7 +7,7 @@ export default Component.extend({
     this._super(...arguments);
     // using Discourse API to fetch events(topics) in the event category
     const eventRoute = this.site.categories.find(category => category.slug.includes("event"));
-    const eventRouteString = eventRoute ?  "/c/" + eventRoute.slug + eventRoute.id : this.siteSettings.event_route;
+    const eventRouteString = eventRoute ?  "/c/" + eventRoute.slug + "/" + eventRoute.id : this.siteSettings.event_route;
     fetch(`${eventRouteString}.json`)
       .then((response) => response.json())
       // filter out objects without an event object or date expired
